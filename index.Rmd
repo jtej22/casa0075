@@ -1,0 +1,111 @@
+---
+title: "Presentation blablabla"
+subtitle: "⚔<br/>with xaringan"
+author: "Group 75"
+institute: "CASA"
+date: "2023/03/02 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+some function here
+
+such as bib
+
+---
+class: center, middle
+
+# Introduction
+
+city
+
+goals
+
+outline
+
+benefit
+
+etc.
+
+---
+
+Atsumi's part
+
+---
+
+Atsumi's part
+
+---
+class: center, middle
+
+# Wokflow
+
+overview
+
+temperature
+
+slums
+
+xxx
+
+---
+
+## overview
+
+josiah's part
+
+---
+## Temperature
+
+Young's part
+
+---
+
+Young's part
+
+---
+## Slums
+
+Yifei's part
+
+---
+
+Yifei's part
+
+---
+## intregate them 
+
+josiah's part
+
+---
+class: center, middle
+
+# Management
+
+timelines
+
+spending plan
+
+stakeholders engagement
+
+---
+
+Yi-chein's part
+
+---
+
+Yi-chein's part
+
+---
+
+Yi-chein's part
+
+---
+class: center, middle
+# Summary
+

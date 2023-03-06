@@ -83,29 +83,59 @@ Yifei's part
 josiah's part
 
 ---
+class: inverse, center, middle
+
+# Project Management
+
+--
+.pull-left[
+**Reliable** 
+
+**Sustainable** 
+
+**Cost-effective**
+]
+--
+.pull-right[
+- Stakeholders engagement
+
+- Timeline
+
+- Spending plan
+
+- Quality control 
+]
+---
 class: center, middle
 
-# Management
+# Stakeholders engagement
 
-timelines
-
-spending plan
-
-stakeholders engagement
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+knitr::include_graphics('images/stakeholder.png')
+```
 
 ---
+class: center, middle
 
-Yi-chein's part
+# Project timeline
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/GANT.png')
+```
+---
+class: center, middle
+
+# Budget plan
 
 ---
+class: center, middle
 
-Yi-chein's part
-
----
-
-Yi-chein's part
-
+# Quality / risk management
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/risk.png')
+```
 ---
 class: center, middle
 # Summary
-
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/workflow.png')
+```

@@ -1,0 +1,146 @@
+---
+title: "Presentation blablabla"
+subtitle: "⚔<br/>with xaringan"
+author: "Group 75"
+institute: "CASA"
+date: "2023/03/02 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+some function here
+
+such as bib
+
+---
+class: center, middle
+
+# Introduction
+
+city
+
+goals
+
+outline
+
+benefit
+
+etc.
+
+---
+
+Atsumi's part
+
+---
+
+Atsumi's part
+
+---
+class: center, middle
+
+# Wokflow
+
+overview
+
+temperature
+
+slums
+
+xxx
+
+---
+
+## overview
+
+josiah's part
+
+---
+## Temperature workflow
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/temp_workflow.png')
+```
+
+---
+## Ahmedbad Heat Action Plan
+
+```{r echo=FALSE, out.width='95%', fig.align='center', cache=TRUE, fig.cap="Source: [Ahmedabad Heat Action Plan 2019](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2019-update.pdf)"}
+knitr::include_graphics('images/temp_alert.png')
+```
+
+---
+## Slums
+
+Yifei's part
+
+---
+
+Yifei's part
+
+---
+## intregate them 
+
+josiah's part
+
+---
+class: inverse, center, middle
+
+# Project Management
+
+--
+.pull-left[
+**Reliable** 
+
+**Sustainable** 
+
+**Cost-effective**
+]
+--
+.pull-right[
+- Stakeholders engagement
+
+- Timeline
+
+- Spending plan
+
+- Quality control 
+]
+---
+class: center, middle
+
+# Stakeholders engagement
+
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+knitr::include_graphics('images/stakeholder.png')
+```
+
+---
+class: center, middle
+
+# Project timeline
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/GANT.png')
+```
+---
+class: center, middle
+
+# Budget plan
+
+---
+class: center, middle
+
+# Quality / risk management
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/risk.png')
+```
+---
+class: center, middle
+# Summary
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/workflow.png')
+```

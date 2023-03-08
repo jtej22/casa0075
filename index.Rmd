@@ -13,9 +13,17 @@ output:
       countIncrementalSlides: false
 ---
 
-some function here
-
-such as bib
+```{r echo=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("./Library.bib", check = FALSE)
+```
 
 ---
 class: center, middle
@@ -54,58 +62,146 @@ slums
 xxx
 
 ---
+## Overview of HAP Workflow (Ahmedabad 2019)
+### Pre-Heat Season (Jan-Mar)
+- AMC Nodal Officer coordinates inter-agency communications
+- Health Department and Medical Professionals educate and prepare heat-related procedures
+- 108 Emergency Service builds public awareness and **identifies vulnerable areas**
 
-## overview
+### Heat Season (March-July)
+- **AMC Nodal Officer activates heat alerts when extreme heat events are forecast** + activates cooling centres and night shelters
+- Community groups check on each other
 
-josiah's part
-
----
-## Temperature
-
-Young's part
-
----
-
-Young's part
-
----
-## Slums
-
-Yifei's part
+### Post-Heat Season (July-Sept)
+- AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
 
 ---
+## Slums Detection
 
-Yifei's part
+### Objective
+
+Identify slum areas
+
+### Data
+
+* EO data
+  * High resolution imagery: from the [QuickBird satellite](https://earth.esa.int/eogateway/missions/quickbird-2)
+> The QuickBird sensor provides a geometric resolution of 0.60 m in panchromatic mode and therefore basically allows for a delineation of the objects in slums `r Citep(myBib,"taubenbock2014")`.
+  * Landsat MSS, TM, ETM+ 
+  *	TerraSAR-X data, available [here](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x#data-section)
+
+* Spatial data
+  *	Street network: from the [OpenStreetMap](https://www.openstreetmap.org/#map=5/54.910/-3.432)
 
 ---
-## intregate them 
+.pull-left[
+### Workflow
 
-josiah's part
+```{r echo=FALSE, out.width='120%', fig.align='center'}
+knitr::include_graphics('images/workflow_slum.png')
+```
+]
+
+--
+.pull-right[
+### Expected results
+
+```{r echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics('images/result1-slum.png')
+```
+
+.small[General slums boundary for giving heatwave warning, Source: `r Citet(myBib, "leonita2018")`]
+
+```{r echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics('images/result2-slum.png')
+```
+
+.small[Accurate slums boundary for upgrading, Source: `r Citet(myBib, "wurm2018a")`]
+
+]
+---
+## Temperature workflow
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/temp_workflow.png')
+```
+
+---
+## Ahmedbad Heat Action Plan
+
+```{r echo=FALSE, out.width='95%', fig.align='center', cache=TRUE, fig.cap="Source: [Ahmedabad Heat Action Plan 2019](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2019-update.pdf)"}
+knitr::include_graphics('images/temp_alert.png')
+```
+
+
+---
+## Integrating them (Will edit more after Young and Yifei)
+**Slum detection**
+The slum detection process can be conducted every 5 years, ideally before the hot season. 
+- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
+- This can be in the action plan for the Pre-Heat Season (January- March) where they prepare for the heat season.
+- Cloud cover is lowest in January, which is when the data collection process should start. 
+- There should be sufficient time for the slum detection process to finish by March.
+
+**Temperature Monitoring**
+Temperature monitoring can be done via remote sensors, and we can incorporate it into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
+(ok sorry will edit based on whether this is updated during heat season or before)
+
+---
+class: inverse, center, middle
+
+# Project Management
+
+--
+.pull-left[
+**Reliable** 
+
+**Sustainable** 
+
+**Cost-effective**
+]
+--
+.pull-right[
+- Stakeholders engagement
+
+- Timeline
+
+- Spending plan
+
+- Quality control 
+]
+---
+class: center, middle
+
+# Stakeholders engagement
+
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+knitr::include_graphics('images/stakeholder.png')
+```
 
 ---
 class: center, middle
 
-# Management
+# Project timeline
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/GANT.png')
+```
+---
+class: center, middle
 
-timelines
-
-spending plan
-
-stakeholders engagement
+# Budget plan
 
 ---
+class: center, middle
 
-Yi-chein's part
-
----
-
-Yi-chein's part
-
----
-
-Yi-chein's part
-
+# Quality / risk management
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/risk.png')
+```
 ---
 class: center, middle
 # Summary
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/workflow.png')
+```
 

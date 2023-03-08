@@ -7,6 +7,5 @@
 ### 4. Our group meeting 
  - (1st) 23/02/2023 : Set our each work
  - (2nd) 02/03/2023 : Make the Xaringan file with our research
- - (3rd) 07/03/2023 : 
- - (4th) 09/03/2023 : 
- - (5th) 14/03/2023 : Drop-in session
+ - (3rd) 09/03/2023 : Merge each slide into one Xaringan file etc.
+ - (4th) 14/03/2023 : Drop-in session

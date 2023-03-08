@@ -25,15 +25,13 @@ class: center, middle, inverse, title-slide
 ### CASA
 ]
 .date[
-### 2023/03/02 (updated: 2023-03-07)
+### 2023/03/02 (updated: 2023-03-08)
 ]
 
 ---
 
 
-some function here
 
-such as bib
 
 ---
 class: center, middle
@@ -97,14 +95,43 @@ xxx
 &lt;/div&gt;
 
 ---
-## Slums
+## Slums Detection
 
-Yifei's part
+### Objective
+
+identify the slums boundary
+
+### Data
+
+* EO data
+  * high resolution imagery: from the [QuickBird satellite](https://earth.esa.int/eogateway/missions/quickbird-2)
+&gt; The QuickBird sensor provides a geometric resolution of 0.60 m in panchromatic mode and therefore basically allows for a delineation of the objects in slums &lt;a name=cite-taubenbock2014&gt;&lt;/a&gt;([Taubenböck and Kraff, 2014](#bib-taubenbock2014)).
+  * Landsat MSS, TM, ETM+ 
+  *	TerraSAR-X data, available [here](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x#data-section)
+
+* Spatial data
+  *	Street network: from the [OpenStreetMap](https://www.openstreetmap.org/#map=5/54.910/-3.432)
 
 ---
+.pull-left[
+### Work flow
 
-Yifei's part
+&lt;img src="images/workflow_slum.png" width="120%" style="display: block; margin: auto;" /&gt;
+]
 
+--
+.pull-right[
+### Expected resuls
+
+&lt;img src="images/result1-slum.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+.small[general slums boundary for giving heatwave warning, Source: &lt;a name=cite-leonita2018&gt;&lt;/a&gt;[Leonita, Kuffer, Sliuzas, and Persello (2018)](#bib-leonita2018)]
+
+&lt;img src="images/result2-slum.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+.small[Accurate slums boundary for renovation, Source: &lt;a name=cite-wurm2018a&gt;&lt;/a&gt;[Wurm and Taubenböck (2018)](#bib-wurm2018a)]
+
+]
 ---
 ## Integrating them (Will edit more after Young and Yifei)
 **Slum detection**
@@ -164,6 +191,7 @@ class: center, middle
 class: center, middle
 # Summary
 &lt;img src="images/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

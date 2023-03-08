@@ -66,13 +66,18 @@ xxx
 - AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
 
 ---
-## Temperature
+## Temperature workflow
 
-Young's part
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/temp_workflow.png')
+```
 
 ---
+## Ahmedbad Heat Action Plan
 
-Young's part
+```{r echo=FALSE, out.width='95%', fig.align='center', cache=TRUE, fig.cap="Source: [Ahmedabad Heat Action Plan 2019](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2019-update.pdf)"}
+knitr::include_graphics('images/temp_alert.png')
+```
 
 ---
 ## Slums

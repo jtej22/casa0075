@@ -4,7 +4,7 @@
     <title>Presentation blablabla</title>
     <meta charset="utf-8" />
     <meta name="author" content="Group 75" />
-    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -25,16 +25,13 @@ class: center, middle, inverse, title-slide
 ### CASA
 ]
 .date[
-### 2023/03/02 (updated: 2023-03-08)
+### 2023/03/02 (updated: 2023-03-11)
 ]
 
 ---
 
 
 
-```
-## Warning: package 'RefManageR' was built under R version 4.2.2
-```
 
 ---
 class: center, middle
@@ -56,7 +53,7 @@ etc.
 ### Ahmadabad 
 - Most populous city in India, with 5.5 million (Census 2011)
 .pull-right[
-&lt;img src="images/ahmedabad.png" width="40%" style="display: block; margin: auto 0 auto auto;" /&gt;
+
 ]
 - Estimated to have grown to 8 million
 - Cotton industry migrants
@@ -95,11 +92,9 @@ class: center, middle
 
 overview
 
+slum
+
 temperature
-
-slums
-
-xxx
 
 ---
 ## Overview of HAP Workflow (Ahmedabad 2019)
@@ -117,10 +112,6 @@ xxx
 
 ---
 ## Slums Detection
-
-### Objective
-
-Identify slum areas
 
 ### Data
 
@@ -144,11 +135,11 @@ Identify slum areas
 .pull-right[
 ### Expected results
 
-&lt;img src="images/result1-slum.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/result1-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .small[General slums boundary for giving heatwave warning, Source: &lt;a name=cite-leonita2018&gt;&lt;/a&gt;[Leonita, Kuffer, Sliuzas, and Persello (2018)](#bib-leonita2018)]
 
-&lt;img src="images/result2-slum.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/result2-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .small[Accurate slums boundary for upgrading, Source: &lt;a name=cite-wurm2018a&gt;&lt;/a&gt;[Wurm and Taubenböck (2018)](#bib-wurm2018a)]
 
@@ -168,17 +159,20 @@ Identify slum areas
 
 
 ---
-## Integrating them (Will edit more after Young and Yifei)
+## Integrating them 
 **Slum detection**
 The slum detection process can be conducted every 5 years, ideally before the hot season. 
-- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
+- 5 years is a good period of updating the data as slums do not expand that quickly and is adequate. 
 - This can be in the action plan for the Pre-Heat Season (January- March) where they prepare for the heat season.
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
 
 **Temperature Monitoring**
-Temperature monitoring can be done via remote sensors, and we can incorporate it into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
-(ok sorry will edit based on whether this is updated during heat season or before)
+Temperature monitoring can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
+- First output of a vulnerability map can be updated yearly (pre-HS) with previous year's data
+- Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
+- Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
+
 
 ---
 class: inverse, center, middle

@@ -46,7 +46,7 @@ etc.
 - Most populous city in India, with 5.5 million (Census 2011)
 .pull-right[
 ```{r echo=FALSE, out.width='40%', fig.align='right'}
-knitr::include_graphics('images/ahmedabad.png')
+#knitr::include_graphics('images/ahmedabad.png')
 ```
 ]
 - Estimated to have grown to 8 million
@@ -160,17 +160,20 @@ knitr::include_graphics('images/temp_alert.png')
 
 
 ---
-## Integrating them (Will edit more after Young and Yifei)
+## Integrating them 
 **Slum detection**
 The slum detection process can be conducted every 5 years, ideally before the hot season. 
-- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
+- 5 years is a good period of updating the data as slums do not expand that quickly and is adequate. 
 - This can be in the action plan for the Pre-Heat Season (January- March) where they prepare for the heat season.
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
 
 **Temperature Monitoring**
-Temperature monitoring can be done via remote sensors, and we can incorporate it into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
-(ok sorry will edit based on whether this is updated during heat season or before)
+Temperature monitoring can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
+- First output of a vulnerability map can be updated yearly (pre-HS) with previous year's data
+- Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
+- Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
+
 
 ---
 class: inverse, center, middle

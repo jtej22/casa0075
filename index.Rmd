@@ -86,11 +86,9 @@ class: center, middle
 
 overview
 
+slum
+
 temperature
-
-slums
-
-xxx
 
 ---
 ## Overview of HAP Workflow (Ahmedabad 2019)
@@ -108,10 +106,6 @@ xxx
 
 ---
 ## Slums Detection
-
-### Objective
-
-Identify slum areas
 
 ### Data
 
@@ -137,13 +131,13 @@ knitr::include_graphics('images/workflow_slum.png')
 .pull-right[
 ### Expected results
 
-```{r echo=FALSE, out.width='80%', fig.align='center'}
+```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/result1-slum.png')
 ```
 
 .small[General slums boundary for giving heatwave warning, Source: `r Citet(myBib, "leonita2018")`]
 
-```{r echo=FALSE, out.width='80%', fig.align='center'}
+```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/result2-slum.png')
 ```
 

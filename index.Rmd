@@ -161,15 +161,13 @@ knitr::include_graphics('images/temp_alert.png')
 
 ---
 ## Integrating them 
-**Slum detection**
-The slum detection process can be conducted every 5 years, ideally before the hot season. 
+**Slum detection** can be conducted every 5 years, ideally before the hot season. 
 - 5 years is a good period of updating the data as slums do not expand that quickly and is adequate. 
 - This can be in the action plan for the Pre-Heat Season (January- March) where they prepare for the heat season.
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
 
-**Temperature Monitoring**
-Temperature monitoring can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
+**Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
 - First output of a vulnerability map can be updated yearly (pre-HS) with previous year's data
 - Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
 - Both outputs serve to help direct heat mitigation resources to the most vulnerable areas

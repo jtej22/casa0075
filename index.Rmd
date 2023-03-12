@@ -39,7 +39,10 @@ outline
 benefit
 
 etc.
+---
+class: inverse, center, middle
 
+# Problem definition 
 ---
 ## Background 
 ### Ahmadabad 
@@ -52,6 +55,7 @@ etc.
 - Estimated to have grown to 8 million
 - Cotton industry migrants
 - 34% live in slums or chawls
+(- Area 505 km2)
 
 ### The 2010 heatwave
 - Temperature soared to 46.8 degree celcius 
@@ -80,9 +84,13 @@ etc.
 - Provide much needed information about the vulnerable communities in a systematic way
 
 ---
+class: inverse, center, middle
+
+# Approach
+---
 class: center, middle
 
-# Wokflow
+# Workflow
 
 overview
 
@@ -103,6 +111,12 @@ temperature
 
 ### Post-Heat Season (July-Sept)
 - AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
+
+---
+## Overview of our proposed workflow
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/workflow.png')
+```
 
 ---
 ## Slums Detection
@@ -176,58 +190,132 @@ knitr::include_graphics('images/temp_alert.png')
 ---
 class: inverse, center, middle
 
-# Project Management
+# Project plan, risks and value for money
 
 --
 .pull-left[
 **Reliable** 
 
-**Sustainable** 
-
 **Cost-effective**
+
+**Sustainable** 
 ]
 --
 .pull-right[
-- Stakeholders engagement
+- Timeline & Stakeholder
 
-- Timeline
-
-- Spending plan
+- Budgeting
 
 - Quality control 
 ]
 ---
-class: center, middle
+class: left, middle
 
-# Stakeholders engagement
-
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+## Stakeholders engagement
+```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/stakeholder.png')
 ```
 
 ---
-class: center, middle
-
-# Project timeline
-```{r echo=FALSE, out.width='100%', fig.align='center'}
-knitr::include_graphics('images/GANT.png')
+class: left, middle
+## Project timeline
+```{r echo=FALSE, out.width='110%', fig.align='center'}
+knitr::include_graphics('images/GANT1.gif')
 ```
 ---
-class: center, middle
+class: left, middle
 
-# Budget plan
+## Project timeline (cont.)
+```{r echo=FALSE, out.width='110%', fig.align='center'}
+knitr::include_graphics('images/GANT2.gif')
+```
 
 ---
-class: center, middle
+class: left, middle
+## Future area of work / challenges
+- The government currently does not have a GIS team to maintain and operate the system.
 
-# Quality / risk management
+Our solution
+> A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
+
+> The reproducibility of the model will be guaranteed before handing over. 
+
+> One contractor could be recruited to ensure proper deployment of the system. 
+
+---
+class: left, middle
+## Quality / risk management
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/risk.png')
 ```
+
 ---
-class: center, middle
-# Summary
-```{r echo=FALSE, out.width='100%', fig.align='center'}
-knitr::include_graphics('images/workflow.png')
-```
+class: left, top
+## Budget plan
+.pull-left[
+**Costs** (for the first year)
+
+Human capital
+- 1 Project manager (ad-hoc team): £14,640 (488h)
+- 1 Model developer (ad-hoc team): £17,600 (440h)
+- 1 GIS specialist (government contractor): £19,680 (328h)
+
+Data & Equipment
+- QuickBird-2 (£14.5 per sq km): £12,625
+- Sensors: £3,000
+- Computers and IT: £12,000
+
+Space/rent
+- Rent: £1 (in government office / remote)
+]
+
+.pull-right[
+**Benefits**
+
+Short-term: 
+- Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
+
+Long-term: 
+- Prevent economic loss through efficient resource allocation and savings in urgent heat response costs
+- Provide equitable support to vulnerable groups
+]
+
+---
+class: left, middle
+## Budget plan
+
+- Cost of building and testing the model (first year) = £79,546
+- Cost of maintenance and operation = approx. *£18,000* per year 
+  - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
+
+Value for money
+> Our system will be in operation for the future 15-20 years within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
+
+---
+class: left, middle
+## Summary
+SWOT of our model
+.pull-left[
+Strength: 
+
+Identify **vulnerable locations** where the government administration has low regulatory power on. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
+]
+
+.pull-right[
+Weakness:
+
+Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response.
+]
+
+.pull-left[
+Opportunity: 
+
+The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
+]
+
+.pull-right[
+Threat: 
+
+Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
+]
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Presentation blablabla</title>
+    <title>The heatwave and slums in Ahmedabad, India</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Group 75" />
+    <meta name="author" content="Astumi, Eunyoung, Josiah, Yi-Chien, Yifei" />
     <script src="libs/header-attrs-2.19/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
@@ -13,19 +13,19 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Presentation blablabla
+# The heatwave and slums in Ahmedabad, India
 ]
 .subtitle[
-## ⚔<br/>with xaringan
+## Group 75
 ]
 .author[
-### Group 75
+### Astumi, Eunyoung, Josiah, Yi-Chien, Yifei
 ]
 .institute[
 ### CASA
 ]
 .date[
-### 2023/03/02 (updated: 2023-03-12)
+### 2023/03/02 (updated: 2023-03-13)
 ]
 
 ---
@@ -33,7 +33,6 @@ class: center, middle, inverse, title-slide
 
 
 
----
 class: center, middle
 
 # Introduction
@@ -47,6 +46,7 @@ outline
 benefit
 
 etc.
+
 ---
 class: inverse, center, middle
 
@@ -81,7 +81,6 @@ class: inverse, center, middle
 - Thus, listing high risk areas before the arrival of the summer is required
 - Goal: Systematically identify the areas of high risk and vulnerable populations and neighbourhoods
 
-
 ### Compliance
 - Sustainable Development Goals 11
 
@@ -94,15 +93,8 @@ class: inverse, center, middle
 
 # Approach
 ---
-class: center, middle
-
-# Workflow
-
-overview
-
-slum
-
-temperature
+## Overview of our proposed workflow
+&lt;img src="images/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Overview of HAP Workflow (Ahmedabad 2019)
@@ -119,10 +111,6 @@ temperature
 - AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
 
 ---
-## Overview of our proposed workflow
-&lt;img src="images/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
 ## Slums Detection
 
 ### Data
@@ -137,39 +125,50 @@ temperature
   *	Street network: from the [OpenStreetMap](https://www.openstreetmap.org/#map=5/54.910/-3.432)
 
 ---
+## Slums Detection
 .pull-left[
 ### Workflow
-
-&lt;img src="images/workflow_slum.png" width="120%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/workflow_slum.png" width="90%" style="display: block; margin: auto;" /&gt;
 ]
-
 --
 .pull-right[
 ### Expected results
-
 &lt;img src="images/result1-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
-
 .small[General slums boundary for giving heatwave warning, Source: &lt;a name=cite-leonita2018&gt;&lt;/a&gt;[Leonita, Kuffer, Sliuzas, and Persello (2018)](#bib-leonita2018)]
-
-&lt;img src="images/result2-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
-
+&lt;img src="images/result2-slum.png" width="90%" style="display: block; margin: auto;" /&gt;
 .small[Accurate slums boundary for upgrading, Source: &lt;a name=cite-wurm2018a&gt;&lt;/a&gt;[Wurm and Taubenböck (2018)](#bib-wurm2018a)]
-
 ]
----
-## Temperature workflow
-
-&lt;img src="images/temp_workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-## Ahmedbad Heat Action Plan
+## Heatwave classification
+### Data
+* EO data from GEE
+  * [Landsat 8 OLI/TIRS Collection 2](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_TOA)
+  * MODIS
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="images/temp_alert.png" alt="Source: [Ahmedabad Heat Action Plan 2019](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2019-update.pdf)" width="95%" /&gt;
-&lt;p class="caption"&gt;Source: [Ahmedabad Heat Action Plan 2019](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2019-update.pdf)&lt;/p&gt;
-&lt;/div&gt;
+* [Meteorological data](https://mausam.imd.gov.in/ahmedabad/)
+  * The average daily temperature by region
+  * The average daily temperature by month (especially Summer)
+  * Precipitation
+  
+* Census data
+  * Daily death toll (excluding accidental deaths)
+  * Death toll by region (e.g. ward, borough)
 
+* Spatial data
+  * Administrative boundary data:from the [OpenStreetMap](https://www.openstreetmap.org/relation/1953566#map=9/22.7298/72.3388)
 
+---
+## Heatwave classification
+### Workflow : need to change but no idea 
+&lt;img src="images/temp_workflow.png" width="120%" style="display: block; margin: auto;" /&gt;
+
+---
+## Heatwave classification 
+### Expected results
+&lt;img src="images/heatwave_result_1.png" width="120%" style="display: block; margin: auto;" /&gt;
+
+.small[Future Heat Events and Social Vulnerability 2018, Source: &lt;a name=cite-zotero-205&gt;&lt;/a&gt;[ (2023)](#bib-zotero-205)]
 ---
 ## Integrating them 
 **Slum detection** can be conducted every 5 years, ideally before the hot season. 
@@ -182,7 +181,6 @@ temperature
 - First output of a vulnerability map can be updated yearly (pre-HS) with previous year's data
 - Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
 - Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
-
 
 ---
 class: inverse, center, middle

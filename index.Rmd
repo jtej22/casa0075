@@ -21,59 +21,59 @@ BibOptions(check.entries = FALSE,
            style = "markdown",
            hyperlink = TRUE,
            dashed = FALSE,
+           max.names = 2,
            no.print.fields=c("doi", "url", "urldate", "issn"))
 myBib <- ReadBib("./Library.bib", check = FALSE)
 ```
 
-class: center, middle
-
-# Introduction
-
-city
-
-goals
-
-outline
-
-benefit
-
-etc.
-
----
-class: inverse, center, middle
-
-# Problem definition 
 ---
 ## Background 
+.pull-left[
 ### Ahmadabad 
-- Most populous city in India, with 5.5 million (Census 2011)
+- Most populous city in India
+- 5.5 million in 2011 `r Citep(myBib, "chandramouli2011census")`
+- Est. 8 million in 2023
+- City's growth from the textile industry in 1860's `r Citep(myBib, "barua2018legacies")`
+- Cotton industry migrants in slums and *Chawls*
+- Estimated 34% live in slums or *chawls* (low-quality housing) `r Citep(myBib, "killemsetty2013understanding")`
+]
+
 .pull-right[
-```{r echo=FALSE, out.width='40%', fig.align='right'}
-#knitr::include_graphics('images/ahmedabad.png')
+```{r echo=FALSE, out.width='75%', fig.align='top, right'}
+knitr::include_graphics('images/Layout1.png')
 ```
 ]
-- Estimated to have grown to 8 million
-- Cotton industry migrants
-- 34% live in slums or chawls
-(- Area 505 km2)
 
 ### The 2010 heatwave
 - Temperature soared to 46.8 degree celcius 
-- Heat-related excess mortality of 1344 people
+- Heat-related excess mortality of 1344 people  `r Citep(myBib, "azhar2014heat")`
 - first Heat Action plan published in 2013
 
-### 2019 Heat Action Plan strategies 
+---
+## 2019 Heat Action Plan (6th iteration)
+### Four-pronged Strategy
 - to increase public awareness and to communicate the risk of heat waves 
 - to initiate an early warning system 
 - to increase the capacity among health care professionals and 
 - to reduce health exposure and promote adaptive measures 
 
----
+### Ethos of the HAP = Protection of the vulnerable population
+- Thus, **identification of high risk neighbourhoods** before the arrival of the summer is a key priority
+- The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
 
-### Problem statement and objective
-- Protection of the vulnerable population is the centre of the HAP.
-- Thus, listing high risk areas before the arrival of the summer is required
-- Goal: Systematically identify the areas of high risk and vulnerable populations and neighbourhoods
+---
+## Problem statement
+- Slums likely to have increased due to population growth, despite efforts to upgrade existing slums
+- Census data is already outdated 
+- The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
+- The locations of slums are unclear and need updated. 
+- Urban geometry can contribute to heat islands and intra-urban temperature differences. (up to 6 degree in Delhi) `r Citep(myBib, "yadav2018spatial")`
+
+
+
+## Objective of the proposal
+**Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow
+---
 
 ### Compliance
 - Sustainable Development Goals 11
@@ -82,10 +82,11 @@ class: inverse, center, middle
 - Growing population, outdated census 
 - Provide much needed information about the vulnerable communities in a systematic way
 
----
-class: inverse, center, middle
+### Climate change
+- Increased exposure to extreme weather, incl. heatwave
+- Impacts on the physical, natural and social systems
+- Threats to food and water security
 
-# Approach
 ---
 ## Overview of our proposed workflow
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
@@ -176,9 +177,10 @@ knitr::include_graphics('images/heatwave_result_1.png')
 
 .small[Future Heat Events and Social Vulnerability 2018, Source: `r Citet(myBib, "zotero-205")`]
 ---
-## Integrating them 
-**Slum detection** can be conducted every 5 years, ideally before the hot season. 
-- 5 years is a good period of updating the data as slums do not expand that quickly and is adequate. 
+## Integrating them (Will edit more after Young and Yifei)
+**Slum detection**
+The slum detection process can be conducted every 5 years, ideally before the hot season. 
+- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
 - This can be in the action plan for the Pre-Heat Season (January- March) where they prepare for the heat season.
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
@@ -188,135 +190,62 @@ knitr::include_graphics('images/heatwave_result_1.png')
 - Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
 - Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
 
+
 ---
 class: inverse, center, middle
 
-# Project plan, risks and value for money
+# Project Management
 
 --
 .pull-left[
 **Reliable** 
 
-**Cost-effective**
-
 **Sustainable** 
+
+**Cost-effective**
 ]
 --
 .pull-right[
-- Timeline & Stakeholder
+- Stakeholders engagement
 
-- Budgeting
+- Timeline
+
+- Spending plan
 
 - Quality control 
 ]
 ---
-class: left, middle
+class: center, middle
 
-## Stakeholders engagement
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+# Stakeholders engagement
+
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('images/stakeholder.png')
 ```
 
 ---
-class: left, middle
-## Project timeline
-```{r echo=FALSE, out.width='110%', fig.align='center'}
-knitr::include_graphics('images/GANT1.gif')
+class: center, middle
+
+# Project timeline
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/GANT.png')
 ```
 ---
-class: left, middle
+class: center, middle
 
-## Project timeline (cont.)
-```{r echo=FALSE, out.width='110%', fig.align='center'}
-knitr::include_graphics('images/GANT2.gif')
-```
+# Budget plan
 
 ---
-class: left, middle
-## Future area of work / challenges
-- The government currently does not have a GIS team to maintain and operate the system.
+class: center, middle
 
-Our solution
-> A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
-
-> The reproducibility of the model will be guaranteed before handing over. 
-
-> One contractor could be recruited to ensure proper deployment of the system. 
-
----
-class: left, middle
-## Quality / risk management
+# Quality / risk management
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/risk.png')
 ```
-
 ---
-class: left, top
-## Budget plan
-.pull-left[
-**Costs** (for the first year)
-
-Human capital
-- 1 Project manager (ad-hoc team): £14,640 (488h)
-- 1 Model developer (ad-hoc team): £17,600 (440h)
-- 1 GIS specialist (government contractor): £19,680 (328h)
-
-Data & Equipment
-- QuickBird-2 (£14.5 per sq km): £12,625
-- Sensors: £3,000
-- Computers and IT: £12,000
-
-Space/rent
-- Rent: £1 (in government office / remote)
-]
-
-.pull-right[
-**Benefits**
-
-Short-term: 
-- Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
-
-Long-term: 
-- Prevent economic loss through efficient resource allocation and savings in urgent heat response costs
-- Provide equitable support to vulnerable groups
-]
-
----
-class: left, middle
-## Budget plan
-
-- Cost of building and testing the model (first year) = £79,546
-- Cost of maintenance and operation = approx. *£18,000* per year 
-  - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
-
-Value for money
-> Our system will be in operation for the future 15-20 years within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
-
----
-class: left, middle
-## Summary
-SWOT of our model
-.pull-left[
-Strength: 
-
-Identify **vulnerable locations** where the government administration has low regulatory power on. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
-]
-
-.pull-right[
-Weakness:
-
-Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response.
-]
-
-.pull-left[
-Opportunity: 
-
-The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
-]
-
-.pull-right[
-Threat: 
-
-Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
-]
+class: center, middle
+# Summary
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/workflow.png')
+```
 

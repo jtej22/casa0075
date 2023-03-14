@@ -3,8 +3,10 @@
   <head>
     <title>The heatwave and slums in Ahmedabad, India</title>
     <meta charset="utf-8" />
+
     <meta name="author" content="Astumi, Eunyoung, Josiah, Yi-Chien, Yifei" />
     <script src="libs/header-attrs-2.19/header-attrs.js"></script>
+
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -26,12 +28,16 @@ class: center, middle, inverse, title-slide
 ]
 .date[
 ### 2023/03/02 (updated: 2023-03-13)
+
 ]
 
 ---
 
 
 
+```
+## Warning: package 'RefManageR' was built under R version 4.2.2
+```
 
 class: center, middle
 
@@ -47,21 +53,21 @@ benefit
 
 etc.
 
+
 ---
 class: inverse, center, middle
 
-# Problem definition 
+
 ---
 ## Background 
 ### Ahmadabad 
 - Most populous city in India, with 5.5 million (Census 2011)
 .pull-right[
-
+&lt;img src="images/ahmedabad.png" width="40%" style="display: block; margin: auto 0 auto auto;" /&gt;
 ]
 - Estimated to have grown to 8 million
 - Cotton industry migrants
 - 34% live in slums or chawls
-(- Area 505 km2)
 
 ### The 2010 heatwave
 - Temperature soared to 46.8 degree celcius 
@@ -89,12 +95,18 @@ class: inverse, center, middle
 - Provide much needed information about the vulnerable communities in a systematic way
 
 ---
+
 class: inverse, center, middle
 
 # Approach
 ---
 ## Overview of our proposed workflow
 &lt;img src="images/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+slums
+
+xxx
 
 ---
 ## Overview of HAP Workflow (Ahmedabad 2019)
@@ -112,6 +124,10 @@ class: inverse, center, middle
 
 ---
 ## Slums Detection
+
+### Objective
+
+Identify slum areas
 
 ### Data
 
@@ -133,9 +149,11 @@ class: inverse, center, middle
 --
 .pull-right[
 ### Expected results
+
 &lt;img src="images/result1-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
 .small[General slums boundary for giving heatwave warning, Source: &lt;a name=cite-leonita2018&gt;&lt;/a&gt;[Leonita, Kuffer, Sliuzas, and Persello (2018)](#bib-leonita2018)]
 &lt;img src="images/result2-slum.png" width="90%" style="display: block; margin: auto;" /&gt;
+
 .small[Accurate slums boundary for upgrading, Source: &lt;a name=cite-wurm2018a&gt;&lt;/a&gt;[Wurm and Taubenböck (2018)](#bib-wurm2018a)]
 ]
 
@@ -170,9 +188,10 @@ class: inverse, center, middle
 
 .small[Future Heat Events and Social Vulnerability 2018, Source: &lt;a name=cite-zotero-205&gt;&lt;/a&gt;[ (2023)](#bib-zotero-205)]
 ---
-## Integrating them 
-**Slum detection** can be conducted every 5 years, ideally before the hot season. 
-- 5 years is a good period of updating the data as slums do not expand that quickly and is adequate. 
+## Integrating them (Will edit more after Young and Yifei)
+**Slum detection**
+The slum detection process can be conducted every 5 years, ideally before the hot season. 
+- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
 - This can be in the action plan for the Pre-Heat Season (January- March) where they prepare for the heat season.
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
@@ -182,129 +201,56 @@ class: inverse, center, middle
 - Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
 - Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
 
+
 ---
 class: inverse, center, middle
 
-# Project plan, risks and value for money
+# Project Management
 
 --
 .pull-left[
 **Reliable** 
 
-**Cost-effective**
-
 **Sustainable** 
+
+**Cost-effective**
 ]
 --
 .pull-right[
-- Timeline &amp; Stakeholder
+- Stakeholders engagement
 
-- Budgeting
+- Timeline
+
+- Spending plan
 
 - Quality control 
 ]
 ---
-class: left, middle
+class: center, middle
 
-## Stakeholders engagement
-&lt;img src="images/stakeholder.png" width="100%" style="display: block; margin: auto;" /&gt;
+# Stakeholders engagement
 
----
-class: left, middle
-## Project timeline
-&lt;img src="images/GANT1.gif" width="110%" style="display: block; margin: auto;" /&gt;
----
-class: left, middle
-
-## Project timeline (cont.)
-&lt;img src="images/GANT2.gif" width="110%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/stakeholder.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 ---
-class: left, middle
-## Future area of work / challenges
-- The government currently does not have a GIS team to maintain and operate the system.
+class: center, middle
 
-Our solution
-&gt; A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
+# Project timeline
+&lt;img src="images/GANT.png" width="100%" style="display: block; margin: auto;" /&gt;
+---
+class: center, middle
 
-&gt; The reproducibility of the model will be guaranteed before handing over. 
-
-&gt; One contractor could be recruited to ensure proper deployment of the system. 
+# Budget plan
 
 ---
-class: left, middle
-## Quality / risk management
+class: center, middle
+
+# Quality / risk management
 &lt;img src="images/risk.png" width="100%" style="display: block; margin: auto;" /&gt;
-
 ---
-class: left, top
-## Budget plan
-.pull-left[
-**Costs** (for the first year)
-
-Human capital
-- 1 Project manager (ad-hoc team): £14,640 (488h)
-- 1 Model developer (ad-hoc team): £17,600 (440h)
-- 1 GIS specialist (government contractor): £19,680 (328h)
-
-Data &amp; Equipment
-- QuickBird-2 (£14.5 per sq km): £12,625
-- Sensors: £3,000
-- Computers and IT: £12,000
-
-Space/rent
-- Rent: £1 (in government office / remote)
-]
-
-.pull-right[
-**Benefits**
-
-Short-term: 
-- Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
-
-Long-term: 
-- Prevent economic loss through efficient resource allocation and savings in urgent heat response costs
-- Provide equitable support to vulnerable groups
-]
-
----
-class: left, middle
-## Budget plan
-
-- Cost of building and testing the model (first year) = £79,546
-- Cost of maintenance and operation = approx. *£18,000* per year 
-  - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
-
-Value for money
-&gt; Our system will be in operation for the future 15-20 years within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
-
----
-class: left, middle
-## Summary
-SWOT of our model
-.pull-left[
-Strength: 
-
-Identify **vulnerable locations** where the government administration has low regulatory power on. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
-]
-
-.pull-right[
-Weakness:
-
-Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response.
-]
-
-.pull-left[
-Opportunity: 
-
-The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
-]
-
-.pull-right[
-Threat: 
-
-Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
-]
+class: center, middle
+# Summary
+&lt;img src="images/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

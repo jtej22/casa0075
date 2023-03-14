@@ -21,63 +21,70 @@ BibOptions(check.entries = FALSE,
            style = "markdown",
            hyperlink = TRUE,
            dashed = FALSE,
+           max.names = 2,
            no.print.fields=c("doi", "url", "urldate", "issn"))
 myBib <- ReadBib("./Library.bib", check = FALSE)
 ```
 
 ---
-class: center, middle
-
-# Introduction
-
-city
-
-goals
-
-outline
-
-benefit
-
-etc.
-
----
 ## Background 
+.pull-left[
 ### Ahmadabad 
-- Most populous city in India, with 5.5 million (Census 2011)
+- Most populous city in India
+- 5.5 million in 2011 `r Citep(myBib, "chandramouli2011census")`
+- Est. 8 million in 2023
+- City's growth from the textile industry in 1860's `r Citep(myBib, "barua2018legacies")`
+- Cotton industry migrants in slums and *Chawls*
+- Estimated 34% live in slums or *chawls* (low-quality housing) `r Citep(myBib, "killemsetty2013understanding")`
+]
+
 .pull-right[
-```{r echo=FALSE, out.width='40%', fig.align='right'}
-knitr::include_graphics('images/ahmedabad.png')
+```{r echo=FALSE, out.width='75%', fig.align='top, right'}
+knitr::include_graphics('images/Layout1.png')
 ```
 ]
-- Estimated to have grown to 8 million
-- Cotton industry migrants
-- 34% live in slums or chawls
 
 ### The 2010 heatwave
 - Temperature soared to 46.8 degree celcius 
-- Heat-related excess mortality of 1344 people
+- Heat-related excess mortality of 1344 people  `r Citep(myBib, "azhar2014heat")`
 - first Heat Action plan published in 2013
 
-### 2019 Heat Action Plan strategies 
+---
+## 2019 Heat Action Plan (6th iteration)
+### Four-pronged Strategy
 - to increase public awareness and to communicate the risk of heat waves 
 - to initiate an early warning system 
 - to increase the capacity among health care professionals and 
 - to reduce health exposure and promote adaptive measures 
 
+### Ethos of the HAP = Protection of the vulnerable population
+- Thus, **identification of high risk neighbourhoods** before the arrival of the summer is a key priority
+- The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
+
 ---
+## Problem statement
+- Slums likely to have increased due to population growth, despite efforts to upgrade existing slums
+- Census data is already outdated 
+- The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
+- The locations of slums are unclear and need updated. 
+- Urban geometry can contribute to heat islands and intra-urban temperature differences. (up to 6 degree in Delhi) `r Citep(myBib, "yadav2018spatial")`
 
-### Problem statement and objective
-- Protection of the vulnerable population is the centre of the HAP.
-- Thus, listing high risk areas before the arrival of the summer is required
-- Goal: Systematically identify the areas of high risk and vulnerable populations and neighbourhoods
 
+## Objective of the proposal
+**Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow
 
+---
 ### Compliance
 - Sustainable Development Goals 11
 
 ### Benefits to the city
 - Growing population, outdated census 
 - Provide much needed information about the vulnerable communities in a systematic way
+
+### Climate change
+- Increased exposure to extreme weather, incl. heatwave
+- Impacts on the physical, natural and social systems
+- Threats to food and water security
 
 ---
 class: center, middle

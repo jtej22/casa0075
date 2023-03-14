@@ -1,7 +1,7 @@
 ---
-title: "Presentation blablabla"
-subtitle: "⚔<br/>with xaringan"
-author: "Group 75"
+title: "The heatwave and slums in Ahmedabad, India"
+subtitle: "Group 75"
+author: "Astumi, Eunyoung, Josiah, Yi-Chien, Yifei"
 institute: "CASA"
 date: "2023/03/02 (updated: `r Sys.Date()`)"
 output:
@@ -70,10 +70,11 @@ knitr::include_graphics('images/Layout1.png')
 - Urban geometry can contribute to heat islands and intra-urban temperature differences. (up to 6 degree in Delhi) `r Citep(myBib, "yadav2018spatial")`
 
 
+
 ## Objective of the proposal
 **Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow
-
 ---
+
 ### Compliance
 - Sustainable Development Goals 11
 
@@ -87,15 +88,10 @@ knitr::include_graphics('images/Layout1.png')
 - Threats to food and water security
 
 ---
-class: center, middle
-
-# Wokflow
-
-overview
-
-slum
-
-temperature
+## Overview of our proposed workflow
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/workflow.png')
+```
 
 ---
 ## Overview of HAP Workflow (Ahmedabad 2019)
@@ -126,46 +122,60 @@ temperature
   *	Street network: from the [OpenStreetMap](https://www.openstreetmap.org/#map=5/54.910/-3.432)
 
 ---
+## Slums Detection
 .pull-left[
 ### Workflow
-
-```{r echo=FALSE, out.width='120%', fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('images/workflow_slum.png')
 ```
 ]
-
 --
 .pull-right[
 ### Expected results
-
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/result1-slum.png')
 ```
-
 .small[General slums boundary for giving heatwave warning, Source: `r Citet(myBib, "leonita2018")`]
-
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('images/result2-slum.png')
 ```
-
 .small[Accurate slums boundary for upgrading, Source: `r Citet(myBib, "wurm2018a")`]
-
 ]
----
-## Temperature workflow
 
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+---
+## Heatwave classification
+### Data
+* EO data from GEE
+  * [Landsat 8 OLI/TIRS Collection 2](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_TOA)
+  * MODIS
+
+* [Meteorological data](https://mausam.imd.gov.in/ahmedabad/)
+  * The average daily temperature by region
+  * The average daily temperature by month (especially Summer)
+  * Precipitation
+  
+* Census data
+  * Daily death toll (excluding accidental deaths)
+  * Death toll by region (e.g. ward, borough)
+
+* Spatial data
+  * Administrative boundary data:from the [OpenStreetMap](https://www.openstreetmap.org/relation/1953566#map=9/22.7298/72.3388)
+
+---
+## Heatwave classification
+### Workflow : need to change but no idea 
+```{r echo=FALSE, out.width='120%', fig.align='center'}
 knitr::include_graphics('images/temp_workflow.png')
 ```
 
 ---
-## Ahmedbad Heat Action Plan
-
-```{r echo=FALSE, out.width='95%', fig.align='center', cache=TRUE, fig.cap="Source: [Ahmedabad Heat Action Plan 2019](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2019-update.pdf)"}
-knitr::include_graphics('images/temp_alert.png')
+## Heatwave classification 
+### Expected results
+```{r echo=FALSE, out.width='120%', fig.align='center'}
+knitr::include_graphics('images/heatwave_result_1.png')
 ```
 
-
+.small[Future Heat Events and Social Vulnerability 2018, Source: `r Citet(myBib, "zotero-205")`]
 ---
 ## Integrating them (Will edit more after Young and Yifei)
 **Slum detection**
@@ -175,9 +185,11 @@ The slum detection process can be conducted every 5 years, ideally before the ho
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
 
-**Temperature Monitoring**
-Temperature monitoring can be done via remote sensors, and we can incorporate it into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
-(ok sorry will edit based on whether this is updated during heat season or before)
+**Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
+- First output of a vulnerability map can be updated yearly (pre-HS) with previous year's data
+- Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
+- Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
+
 
 ---
 class: inverse, center, middle

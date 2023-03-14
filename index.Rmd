@@ -186,7 +186,10 @@ knitr::include_graphics('images/heatwave_result_1.png')
 **Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
 - First output of a **vulnerability map** can be updated yearly (pre-HS) with previous year's data
 - Second output of a **real-time prediction model** can be updated daily (during HS) based on Meteorological Department's forecasts
-- Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
+
+---
+## Using the outputs
+Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
 - Pre-HS resources: Medical infrastructure, educate residents on heat events
 - Immediate resources: Water supply, public cooling centres and night shelters, medical services
 - Long-term resources: Provide shaded public spaces and Ahmedabad Cool Roofs Program

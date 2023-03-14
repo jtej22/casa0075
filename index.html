@@ -4,7 +4,7 @@
     <title>The heatwave and slums in Ahmedabad, India</title>
     <meta charset="utf-8" />
     <meta name="author" content="Astumi, Eunyoung, Josiah, Yi-Chien, Yifei" />
-    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.19/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -32,9 +32,6 @@ class: center, middle, inverse, title-slide
 
 
 
-```
-## Warning: package 'RefManageR' was built under R version 4.2.2
-```
 
 ---
 ## Background 
@@ -185,56 +182,130 @@ The slum detection process can be conducted every 5 years, ideally before the ho
 - Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
 - Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
 
-
 ---
 class: inverse, center, middle
 
-# Project Management
+# Project plan, risks and value for money
 
 --
 .pull-left[
 **Reliable** 
 
-**Sustainable** 
-
 **Cost-effective**
+
+**Sustainable** 
 ]
 --
 .pull-right[
-- Stakeholders engagement
+- Timeline &amp; Stakeholder
 
-- Timeline
-
-- Spending plan
+- Budgeting
 
 - Quality control 
 ]
 ---
-class: center, middle
+class: left, middle
 
-# Stakeholders engagement
-
-&lt;img src="images/stakeholder.png" width="90%" style="display: block; margin: auto;" /&gt;
-
----
-class: center, middle
-
-# Project timeline
-&lt;img src="images/GANT.png" width="100%" style="display: block; margin: auto;" /&gt;
----
-class: center, middle
-
-# Budget plan
+## Stakeholders engagement
+&lt;img src="images/stakeholder.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-class: center, middle
+class: left, middle
+## Project timeline
+&lt;img src="images/GANT1.gif" width="110%" style="display: block; margin: auto;" /&gt;
+---
+class: left, middle
 
-# Quality / risk management
+## Project timeline (cont.)
+&lt;img src="images/GANT2.gif" width="110%" style="display: block; margin: auto;" /&gt;
+
+---
+class: left, middle
+## Future area of work / challenges
+- The government currently does not have a GIS team to maintain and operate the system.
+
+Our solution
+&gt; A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
+
+&gt; The reproducibility of the model will be guaranteed before handing over. 
+
+&gt; One contractor could be recruited to ensure proper deployment of the system. 
+
+---
+class: left, middle
+## Quality / risk management
 &lt;img src="images/risk.png" width="100%" style="display: block; margin: auto;" /&gt;
+
 ---
-class: center, middle
-# Summary
-&lt;img src="images/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
+class: left, top
+## Budget plan
+.pull-left[
+**Costs** (for the first year)
+
+Human capital
+- 1 Project manager (ad-hoc team): £14,640 (488h)
+- 1 Model developer (ad-hoc team): £17,600 (440h)
+- 1 GIS specialist (government contractor): £19,680 (328h)
+
+Data &amp; Equipment
+- QuickBird-2 (£14.5 per sq km): £12,625
+- Sensors: £3,000
+- Computers and IT: £12,000
+
+Space/rent
+- Rent: £1 (in government office / remote)
+]
+
+.pull-right[
+**Benefits**
+
+Short-term: 
+- Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
+
+Long-term: 
+- Prevent economic loss through efficient resource allocation and savings in urgent heat response costs
+- Provide equitable support to vulnerable groups
+]
+
+---
+class: left, middle
+## Budget plan
+
+- Cost of building and testing the model (first year) = £79,546
+- Cost of maintenance and operation = approx. *£18,000* per year 
+  - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
+
+Value for money
+&gt; Our system will be in operation for the future 15-20 years within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
+
+---
+class: left, middle
+## Summary
+SWOT of our model
+.pull-left[
+Strength: 
+
+Identify **vulnerable locations** where the government administration has low regulatory power on. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
+]
+
+.pull-right[
+Weakness:
+
+Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response.
+]
+
+.pull-left[
+Opportunity: 
+
+The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
+]
+
+.pull-right[
+Threat: 
+
+Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
+]
+
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

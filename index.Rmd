@@ -63,11 +63,11 @@ knitr::include_graphics('images/Layout1.png')
 
 ---
 ## Problem statement
-- Slums likely to have increased due to population growth, despite efforts to upgrade existing slums
-- Census data is already outdated 
+- Slums likely to have increased due to urban population growth (2.76% per annum), despite efforts to upgrade existing slums (Census 2011)
+- Furthermore, census data is already outdated 
 - The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
 - The locations of slums are unclear and need updated. 
-- Urban geometry can contribute to heat islands and intra-urban temperature differences. (up to 6 degree in Delhi) `r Citep(myBib, "yadav2018spatial")`
+- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi `r Citep(myBib, "yadav2018spatial")`
 
 
 
@@ -75,17 +75,16 @@ knitr::include_graphics('images/Layout1.png')
 **Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow
 ---
 
-### Compliance
-- Sustainable Development Goals 11
-
-### Benefits to the city
-- Growing population, outdated census 
-- Provide much needed information about the vulnerable communities in a systematic way
-
-### Climate change
-- Increased exposure to extreme weather, incl. heatwave
-- Impacts on the physical, natural and social systems
-- Threats to food and water security
+## Benefits to the city
+1. **Compliance with Sustainable Development Goals 11**
+> Make cities and human settlements inclusive, safe, resilient and sustainable
+2. **Compliance with the Sendai Framework**
+> Enhansing disaster preparedness for effective response
+ 
+## If no action taken, then... 
+- Increased exposure to heatwave
+- Threats to human health and wellbeing through effects on the physical, natural and social systems
+- Including threats to food and water security `r Citep(myBib, "romanello20212021")`
 
 ---
 ## Overview of our proposed workflow

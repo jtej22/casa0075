@@ -3,10 +3,8 @@
   <head>
     <title>The heatwave and slums in Ahmedabad, India</title>
     <meta charset="utf-8" />
-
     <meta name="author" content="Astumi, Eunyoung, Josiah, Yi-Chien, Yifei" />
-    <script src="libs/header-attrs-2.19/header-attrs.js"></script>
-
+    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -27,8 +25,7 @@ class: center, middle, inverse, title-slide
 ### CASA
 ]
 .date[
-### 2023/03/02 (updated: 2023-03-13)
-
+### 2023/03/02 (updated: 2023-03-14)
 ]
 
 ---
@@ -39,74 +36,67 @@ class: center, middle, inverse, title-slide
 ## Warning: package 'RefManageR' was built under R version 4.2.2
 ```
 
-class: center, middle
-
-# Introduction
-
-city
-
-goals
-
-outline
-
-benefit
-
-etc.
-
-
----
-class: inverse, center, middle
-
-
 ---
 ## Background 
+.pull-left[
 ### Ahmadabad 
-- Most populous city in India, with 5.5 million (Census 2011)
-.pull-right[
-&lt;img src="images/ahmedabad.png" width="40%" style="display: block; margin: auto 0 auto auto;" /&gt;
+- Most populous city in India
+- 5.5 million in 2011 
+- Est. 8 million in 2023
+- City's growth from the textile industry in 1860's &lt;a name=cite-barua2018legacies&gt;&lt;/a&gt;([Barua, 2018](#bib-barua2018legacies))
+- Cotton industry migrants in slums and *Chawls*
+- Estimated 34% live in slums or *chawls* (low-quality housing) &lt;a name=cite-killemsetty2013understanding&gt;&lt;/a&gt;([Killemsetty, 2013](#bib-killemsetty2013understanding))
 ]
-- Estimated to have grown to 8 million
-- Cotton industry migrants
-- 34% live in slums or chawls
+
+.pull-right[
+&lt;img src="images/Layout1.png" width="75%" /&gt;
+]
 
 ### The 2010 heatwave
 - Temperature soared to 46.8 degree celcius 
-- Heat-related excess mortality of 1344 people
+- Heat-related excess mortality of 1344 people  &lt;a name=cite-azhar2014heat&gt;&lt;/a&gt;([Azhar, Mavalankar, Nori-Sarma, Rajiva, Dutta, Jaiswal, Sheffield, Knowlton, and Hess, 2014](#bib-azhar2014heat))
 - first Heat Action plan published in 2013
 
-### 2019 Heat Action Plan strategies 
+---
+## 2019 Heat Action Plan (6th iteration)
+### Four-pronged Strategy
 - to increase public awareness and to communicate the risk of heat waves 
 - to initiate an early warning system 
 - to increase the capacity among health care professionals and 
 - to reduce health exposure and promote adaptive measures 
 
----
-
-### Problem statement and objective
-- Protection of the vulnerable population is the centre of the HAP.
-- Thus, listing high risk areas before the arrival of the summer is required
-- Goal: Systematically identify the areas of high risk and vulnerable populations and neighbourhoods
-
-### Compliance
-- Sustainable Development Goals 11
-
-### Benefits to the city
-- Growing population, outdated census 
-- Provide much needed information about the vulnerable communities in a systematic way
+### Ethos of the HAP = Protection of the vulnerable population
+- Thus, **identification of high risk neighbourhoods** before the arrival of the summer is a key priority
+- The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
 
 ---
+## Problem statement
+- Slums likely to have increased due to urban population growth (2.76% per annum), despite efforts to upgrade existing slums (Census 2011)
+- Furthermore, census data is already outdated 
+- The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
+- The locations of slums are unclear and need updated. 
+- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi &lt;a name=cite-yadav2018spatial&gt;&lt;/a&gt;([Yadav and Sharma, 2018](#bib-yadav2018spatial))
 
-class: inverse, center, middle
 
-# Approach
+
+## Objective of the proposal
+**Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow
+---
+
+## Benefits to the city
+1. **Compliance with Sustainable Development Goals 11**
+&gt; Make cities and human settlements inclusive, safe, resilient and sustainable
+2. **Compliance with the Sendai Framework**
+&gt; Enhansing disaster preparedness for effective response
+ 
+## If no action taken, then... 
+- Increased exposure to heatwave
+- Threats to human health and wellbeing through effects on the physical, natural and social systems
+- Including threats to food and water security &lt;a name=cite-romanello20212021&gt;&lt;/a&gt;([Romanello, McGushin, Di Napoli, Drummond, Hughes, Jamart, Kennard, Lampard, Rodriguez, Arnell, and others, 2021](#bib-romanello20212021))
+
 ---
 ## Overview of our proposed workflow
 &lt;img src="images/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
-slums
-
-xxx
 
 ---
 ## Overview of HAP Workflow (Ahmedabad 2019)
@@ -124,10 +114,6 @@ xxx
 
 ---
 ## Slums Detection
-
-### Objective
-
-Identify slum areas
 
 ### Data
 
@@ -149,11 +135,9 @@ Identify slum areas
 --
 .pull-right[
 ### Expected results
-
 &lt;img src="images/result1-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
 .small[General slums boundary for giving heatwave warning, Source: &lt;a name=cite-leonita2018&gt;&lt;/a&gt;[Leonita, Kuffer, Sliuzas, and Persello (2018)](#bib-leonita2018)]
 &lt;img src="images/result2-slum.png" width="90%" style="display: block; margin: auto;" /&gt;
-
 .small[Accurate slums boundary for upgrading, Source: &lt;a name=cite-wurm2018a&gt;&lt;/a&gt;[Wurm and Taubenböck (2018)](#bib-wurm2018a)]
 ]
 

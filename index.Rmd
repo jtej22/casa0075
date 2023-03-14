@@ -50,18 +50,6 @@ knitr::include_graphics('images/Layout1.png')
 - first Heat Action plan published in 2013
 
 ---
-## 2019 Heat Action Plan (6th iteration)
-### Four-pronged Strategy
-- to increase public awareness and to communicate the risk of heat waves 
-- to initiate an early warning system 
-- to increase the capacity among health care professionals and 
-- to reduce health exposure and promote adaptive measures 
-
-### Ethos of the HAP = Protection of the vulnerable population
-- Thus, **identification of high risk neighbourhoods** before the arrival of the summer is a key priority
-- The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
-
----
 ## Problem statement
 - Slums likely to have increased due to urban population growth (2.76% per annum), despite efforts to upgrade existing slums (Census 2011)
 - Furthermore, census data is already outdated 
@@ -72,7 +60,7 @@ knitr::include_graphics('images/Layout1.png')
 
 
 ## Objective of the proposal
-**Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow
+**Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow, so as to **direct heat mitigation resources to the most vulnerable areas**. 
 ---
 
 ## Benefits to the city
@@ -87,13 +75,19 @@ knitr::include_graphics('images/Layout1.png')
 - Including threats to food and water security `r Citep(myBib, "romanello20212021")`
 
 ---
-## Overview of our proposed workflow
-```{r echo=FALSE, out.width='100%', fig.align='center'}
-knitr::include_graphics('images/workflow.png')
-```
+## Current Workflow: 2019 Heat Action Plan `r Citep(myBib, "amcAhmedabadHeatAction2019")`
+### Four-pronged Strategy
+- to increase public awareness and to communicate the risk of heat waves 
+- to initiate an early warning system 
+- to increase the capacity among health care professionals and 
+- to reduce health exposure and promote adaptive measures 
+
+### Ethos of the HAP = Protection of the vulnerable population
+- Thus, **identification of high risk neighbourhoods** before the arrival of the summer is a key priority
+- The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
 
 ---
-## Overview of HAP Workflow (Ahmedabad 2019)
+## Timeline of Current Workflow `r Citep(myBib, "amcAhmedabadHeatAction2019")`
 ### Pre-Heat Season (Jan-Mar)
 - AMC Nodal Officer coordinates inter-agency communications
 - Health Department and Medical Professionals educate and prepare heat-related procedures
@@ -105,6 +99,12 @@ knitr::include_graphics('images/workflow.png')
 
 ### Post-Heat Season (July-Sept)
 - AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
+
+---
+## Overview of our proposed workflow
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/workflow.png')
+```
 
 ---
 ## Slums Detection
@@ -176,18 +176,20 @@ knitr::include_graphics('images/heatwave_result_1.png')
 
 .small[Future Heat Events and Social Vulnerability 2018, Source: `r Citet(myBib, "zotero-205")`]
 ---
-## Integrating them (Will edit more after Young and Yifei)
-**Slum detection**
-The slum detection process can be conducted every 5 years, ideally before the hot season. 
+## Integrating both workflows
+**Slum detection** process can be conducted every 5 years, before the hot season. 
 - 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
-- This can be in the action plan for the Pre-Heat Season (January- March) where they prepare for the heat season.
+- This can be in the action plan for the **Pre-Heat Season (January- March)** where they prepare for the heat season.
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
 
 **Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
-- First output of a vulnerability map can be updated yearly (pre-HS) with previous year's data
-- Second output of a real-time prediction model can be updated daily (HS) based on Meteorological Department's forecasts
+- First output of a **vulnerability map** can be updated yearly (pre-HS) with previous year's data
+- Second output of a **real-time prediction model** can be updated daily (during HS) based on Meteorological Department's forecasts
 - Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
+- Pre-HS resources: Medical infrastructure, educate residents on heat events
+- Immediate resources: Water supply, public cooling centres and night shelters, medical services
+- Long-term resources: Provide shaded public spaces and Ahmedabad Cool Roofs Program
 
 ---
 class: inverse, center, middle

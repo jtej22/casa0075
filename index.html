@@ -4,7 +4,7 @@
     <title>The heatwave and slums in Ahmedabad, India</title>
     <meta charset="utf-8" />
     <meta name="author" content="Astumi, Eunyoung, Josiah, Yi-Chien, Yifei" />
-    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.19/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -25,7 +25,7 @@ class: center, middle, inverse, title-slide
 ### CASA
 ]
 .date[
-### 2023/03/02 (updated: 2023-03-14)
+### 2023/03/02 (updated: 2023-03-15)
 ]
 
 ---
@@ -209,40 +209,25 @@ class: inverse, center, middle
 - Quality control 
 ]
 ---
-class: left, middle
-
 ## Stakeholders engagement
 &lt;img src="images/stakeholder.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-class: left, middle
 ## Project timeline
-&lt;img src="images/GANT1.gif" width="110%" style="display: block; margin: auto;" /&gt;
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/GANT1.gif" alt="Work Package 1&amp;amp;2" width="110%" /&gt;
+&lt;p class="caption"&gt;Work Package 1&amp;2&lt;/p&gt;
+&lt;/div&gt;
 ---
-class: left, middle
-
 ## Project timeline (cont.)
-&lt;img src="images/GANT2.gif" width="110%" style="display: block; margin: auto;" /&gt;
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/GANT2.gif" alt="Work Package 3" width="110%" /&gt;
+&lt;p class="caption"&gt;Work Package 3&lt;/p&gt;
+&lt;/div&gt;
+
+Deliverable = **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
 
 ---
-class: left, middle
-## Future area of work / challenges
-- The government currently does not have a GIS team to maintain and operate the system.
-
-Our solution
-&gt; A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
-
-&gt; The reproducibility of the model will be guaranteed before handing over. 
-
-&gt; One contractor could be recruited to ensure proper deployment of the system. 
-
----
-class: left, middle
-## Quality / risk management
-&lt;img src="images/risk.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-class: left, top
 ## Budget plan
 .pull-left[
 **Costs** (for the first year)
@@ -273,24 +258,61 @@ Long-term:
 ]
 
 ---
-class: left, middle
 ## Budget plan
 
 - Cost of building and testing the model (first year) = £79,546
-- Cost of maintenance and operation = approx. *£18,000* per year 
+- Cost of maintenance and operation = approx. *£20,000* per year 
   - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
 
 Value for money
-&gt; Our system will be in operation for the future 15-20 years within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
+&gt; Our system will be in operation for the future *10-15 years* within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
 
 ---
-class: left, middle
+## Challenges, solutions and future work
+**The government currently does not have a GIS team to maintain and operate the system.**
+Our solution
+&gt; A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
+
+&gt; The reproducibility of the model will be guaranteed before handing over. 
+
+&gt; One contractor could be recruited to ensure proper deployment of the system. 
+
+**The benefits of deploying our model is not clear in the short-term.**
+Our solution 
+&gt; Annual reviews at the end of heat season will be conducted by the HAP team. 
+
+&gt; Secondary assessment on the impacts can be conducted. 
+
+---
+## Quality / risk management
+&lt;img src="images/risk.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+## Key risks and mitigation solutions 
+
+**High spatial resolution imageries for slum detection are expensive to acquire and may go beyond set budget in the long run.**
+&gt; Since the slum detection requires less frequent data sourcing, higher costs per imagery (QuickBird-2) would be acceptable. However, lower resolution data could be used since the boundary of slums tend to be less clear and may grow. The locations of slums are more important than the precise coverages at this stage. Otherwise, acquire more funding from the government.
+
+**Deficiency of current approach to forecast temperature based on meteorological agencies (which usually locate at rural areas rather than city centres where the temperature is higher).** 
+&gt; Convey the usefulness of our model to tackle heatwaves to the government. Install sensors in the detected slum areas to check the forecasting results.
+
+
+---
+## Key risks and mitigation solutions (cont.)
+
+**Model accuracy is influenced by trees and tall buildings in surface temperature data.**
+&gt;Test the system in real-world events before putting into normal use. Conduct accurarcy assessment testing the prediction with ground truth data for previous years and the coming summer real-world cases. Present the results to the users and revise the model if needed. Not purely rely on the system and compare the result with the temperature sensors in slum areas. 
+
+**Our system does not mitigating heat-related risks for residents who are outdoor workers as their workplace is not monitored.**
+&gt; Monitor the land surface temperature for slums and let residents to be at home during heatwaves. Although focusing on interventions to slums, the model can be adjusted for workplace temperature monitoring if needed.
+
+---
 ## Summary
 SWOT of our model
 .pull-left[
 Strength: 
 
-Identify **vulnerable locations** where the government administration has low regulatory power on. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
+Identify **vulnerable locations** where the government administration has low regulatory power on. Recommend **efficient solution of resource allocation** during heatwave. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
 ]
 
 .pull-right[

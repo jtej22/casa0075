@@ -216,48 +216,25 @@ class: inverse, center, middle
 - Quality control 
 ]
 ---
-class: left, middle
-
 ## Stakeholders engagement
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/stakeholder.png')
 ```
 
 ---
-class: left, middle
 ## Project timeline
-```{r echo=FALSE, out.width='110%', fig.align='center'}
+```{r echo=FALSE, out.width='110%', fig.align='center', fig.cap='Work Package 1&2'}
 knitr::include_graphics('images/GANT1.gif')
 ```
 ---
-class: left, middle
-
 ## Project timeline (cont.)
-```{r echo=FALSE, out.width='110%', fig.align='center'}
+```{r echo=FALSE, out.width='110%', fig.align='center', fig.cap='Work Package 3'}
 knitr::include_graphics('images/GANT2.gif')
 ```
 
----
-class: left, middle
-## Future area of work / challenges
-- The government currently does not have a GIS team to maintain and operate the system.
-
-Our solution
-> A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
-
-> The reproducibility of the model will be guaranteed before handing over. 
-
-> One contractor could be recruited to ensure proper deployment of the system. 
+Deliverable = **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
 
 ---
-class: left, middle
-## Quality / risk management
-```{r echo=FALSE, out.width='100%', fig.align='center'}
-knitr::include_graphics('images/risk.png')
-```
-
----
-class: left, top
 ## Budget plan
 .pull-left[
 **Costs** (for the first year)
@@ -288,24 +265,63 @@ Long-term:
 ]
 
 ---
-class: left, middle
 ## Budget plan
 
 - Cost of building and testing the model (first year) = £79,546
-- Cost of maintenance and operation = approx. *£18,000* per year 
+- Cost of maintenance and operation = approx. *£20,000* per year 
   - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
 
 Value for money
-> Our system will be in operation for the future 15-20 years within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
+> Our system will be in operation for the future *10-15 years* within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
 
 ---
-class: left, middle
+## Challenges, solutions and future work
+**The government currently does not have a GIS team to maintain and operate the system.**
+Our solution
+> A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
+
+> The reproducibility of the model will be guaranteed before handing over. 
+
+> One contractor could be recruited to ensure proper deployment of the system. 
+
+**The benefits of deploying our model is not clear in the short-term.**
+Our solution 
+> Annual reviews at the end of heat season will be conducted by the HAP team. 
+
+> Secondary assessment on the impacts can be conducted. 
+
+---
+## Quality / risk management
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('images/risk.png')
+```
+
+---
+## Key risks and mitigation solutions 
+
+**High spatial resolution imageries for slum detection are expensive to acquire and may go beyond set budget in the long run.**
+> Since the slum detection requires less frequent data sourcing, higher costs per imagery (QuickBird-2) would be acceptable. However, lower resolution data could be used since the boundary of slums tend to be less clear and may grow. The locations of slums are more important than the precise coverages at this stage. Otherwise, acquire more funding from the government.
+
+**Deficiency of current approach to forecast temperature based on meteorological agencies (which usually locate at rural areas rather than city centres where the temperature is higher).** 
+> Convey the usefulness of our model to tackle heatwaves to the government. Install sensors in the detected slum areas to check the forecasting results.
+
+
+---
+## Key risks and mitigation solutions (cont.)
+
+**Model accuracy is influenced by trees and tall buildings in surface temperature data.**
+>Test the system in real-world events before putting into normal use. Conduct accurarcy assessment testing the prediction with ground truth data for previous years and the coming summer real-world cases. Present the results to the users and revise the model if needed. Not purely rely on the system and compare the result with the temperature sensors in slum areas. 
+
+**Our system does not mitigating heat-related risks for residents who are outdoor workers as their workplace is not monitored.**
+> Monitor the land surface temperature for slums and let residents to be at home during heatwaves. Although focusing on interventions to slums, the model can be adjusted for workplace temperature monitoring if needed.
+
+---
 ## Summary
 SWOT of our model
 .pull-left[
 Strength: 
 
-Identify **vulnerable locations** where the government administration has low regulatory power on. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
+Identify **vulnerable locations** where the government administration has low regulatory power on. Recommend **efficient solution of resource allocation** during heatwave. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
 ]
 
 .pull-right[

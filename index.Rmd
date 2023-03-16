@@ -113,7 +113,7 @@ knitr::include_graphics('images/workflow.png')
 * EO data
   * High resolution imagery: from the [QuickBird satellite](https://earth.esa.int/eogateway/missions/quickbird-2)
 > The QuickBird sensor provides a geometric resolution of 0.60 m in panchromatic mode and therefore basically allows for a delineation of the objects in slums `r Citep(myBib,"taubenbock2014")`.
-  * Landsat MSS, TM, ETM+ 
+  * Landsat MSS, TM, ETM+, available [here](https://developers.google.com/earth-engine/datasets/catalog/landsat)
   *	TerraSAR-X data, available [here](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x#data-section)
 
 * Spatial data
@@ -133,11 +133,11 @@ knitr::include_graphics('images/workflow_slum.png')
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/result1-slum.png')
 ```
-.small[General slums boundary for giving heatwave warning, Source: `r Citet(myBib, "leonita2018")`]
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+<small>General slums boundary for giving heatwave warning, Source: `r Citet(myBib, "leonita2018")`</small>
+```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/result2-slum.png')
 ```
-.small[Accurate slums boundary for upgrading, Source: `r Citet(myBib, "wurm2018a")`]
+<small>Accurate slums boundary for upgrading, Source: `r Citet(myBib, "wurm2018a")`</small>
 ]
 
 ---
@@ -167,7 +167,7 @@ knitr::include_graphics('images/result2-slum.png')
 knitr::include_graphics('images/heatwave_only_workflow.png')
 ```
 
-.small[Source: `r Citet(myBib, "wolf2013")`]
+<small>Source: `r Citet(myBib, "wolf2013")`</small>
 
 ---
 ## Heatwave classification
@@ -176,7 +176,7 @@ knitr::include_graphics('images/heatwave_only_workflow.png')
 knitr::include_graphics('images/heatwave_result_1.png')
 ```
 
-.small[Source: [Future Heat Events and Social Vulnerability 2018](https://geoxc-apps2.bd.esri.com/Climate/HeatVulnerability/index.html)]
+<small>Source: [Future Heat Events and Social Vulnerability 2018](https://geoxc-apps2.bd.esri.com/Climate/HeatVulnerability/index.html)</small>
 
 ---
 ## Integrating both workflows
@@ -385,9 +385,22 @@ Threat:
 
 - Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
 ]
+---
+## Appendix
 
+* Alternative Model for slum detection
+
+```{r echo=FALSE, out.width='40%', fig.align='center'}
+knitr::include_graphics('images/alternative-model.png')
+```
+<small>Source: `r Citet(myBib, "kit2012")`</small>
+
+It would need more fund, human capital and time.
 ---
 ## Reference 
 
 
+```{r results='asis', echo=FALSE, warning=FALSE}
+PrintBibliography(myBib, start = 1, end = 7)
+```
 

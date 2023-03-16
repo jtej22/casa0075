@@ -1,0 +1,20 @@
+ ,hc/unit,Day rate (GBP),Total cost (GBP)
+Human capital,,,
+Project manager (ad-hoc team),1, 370 ," 22,570 "
+Model developer (ad-hoc team),2, 525 ," 57,750 "
+GIS specialist (government contractor),1, 400 ," 8,000 "
+Data & Equipment,,,
+ QuickBird-2  , 505 sq km , 14.5 per sq km ," 12,625 "
+ Sensors , 6 , 800 per item ," 4,200 "
+ Computers and IT ,,," 12,000 "
+ Other ,,,
+ Rent (in government office / remote) ,,, 1 
+ Rate and cost overrun (10%) ,,," 11,715 "
+ Cost of building and testing the model (first year) ,,," 128,861 "
+ GIS specialist (government contractor) , 2 , 400 ," 32,800 "
+ QuickBird-2 (acquired every 5 years) , 505 sq km , 14.5 per sq km ," 2,525 "
+ Sensors and IT maintainence  ,,," 1,000 "
+ Rent (in government office / remote) ,,, 1 
+ Rate and cost overrun (10%) ,,," 3,633 "
+ Cost of maintenance and operation (per year) ,,," 39,959 "
+ Est. cost for 10 years  ,,," 488,488 "

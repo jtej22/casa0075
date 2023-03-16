@@ -229,63 +229,103 @@ knitr::include_graphics('images/stakeholder.png')
 ```{r echo=FALSE, out.width='110%', fig.align='center', fig.cap='Work Package 1&2'}
 knitr::include_graphics('images/GANT1.gif')
 ```
+
+WP1 and WP2 will be delivered in the first 4 months. 
+
 ---
 ## Project timeline (cont.)
+Deliverable = **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
+
 ```{r echo=FALSE, out.width='110%', fig.align='center', fig.cap='Work Package 3'}
 knitr::include_graphics('images/GANT2.gif')
 ```
 
-Deliverable = **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
+WP3 is the actual operation of the model after handing over. 
 
 ---
 ## Budget plan
-.pull-left[
-**Costs** (for the first year)
+**Costs**
+```{r echo=FALSE, out.width='100%'}
+xaringanExtra::use_panelset()
 
-Human capital
-- 1 Project manager (ad-hoc team): £14,640 (488h)
-- 1 Model developer (ad-hoc team): £17,600 (440h)
-- 1 GIS specialist (government contractor): £19,680 (328h)
+cost<- read.csv("COST.csv", 
+                         header = TRUE, 
+                         sep = ",",  
+                         encoding = "latin1")
+```
 
-Data & Equipment
-- QuickBird-2 (£14.5 per sq km): £12,625
-- Sensors: £3,000
-- Computers and IT: £12,000
+.panelset[
 
-Space/rent
-- Rent: £1 (in government office / remote)
+.panel[.panel-name[Human capital]
+
+```{r echo=FALSE, out.width='100%'}
+human<-cost[2:4,]
+
+knitr::kable(head(human), format = 'html')
+```
+]
+.panel[.panel-name[Data & Equipment]
+```{r echo=FALSE, out.width='100%'}
+equip<-cost[6:8,]
+
+knitr::kable(head(equip), format = 'html')
+```
+
+]
+.panel[.panel-name[Other]
+```{r echo=FALSE, out.width='100%'}
+other<-cost[10:11,c(1,4)]
+
+knitr::kable(head(other), format = 'html')
+```
+]
+.panel[.panel-name[Total]
+```{r echo=FALSE, out.width='100%'}
+total<-cost[12,c(1,4)]
+
+knitr::kable(head(total), format = 'html')
+```
+]
+.panel[.panel-name[peryear]
+```{r echo=FALSE, out.width='100%'}
+peryear<-cost[13:19,]
+
+knitr::kable(head(peryear), format = 'html')
+```
+
+]
 ]
 
-.pull-right[
+
+---
+## Budget plan
 **Benefits**
 
-Short-term: 
-- Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
+.panelset[
 
-Long-term: 
+.panel[.panel-name[Short-term]
+- Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
+]
+.panel[.panel-name[Long-term]
 - Prevent economic loss through efficient resource allocation and savings in urgent heat response costs
 - Provide equitable support to vulnerable groups
 ]
-
----
-## Budget plan
-
-- Cost of building and testing the model (first year) = £79,546
-- Cost of maintenance and operation = approx. *£20,000* per year 
+.panel[.panel-name[Value for money]
+- Our system will be in operation for the future *5-10 years* within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
+- Cost of building and testing the model (first year) = *£130,000*
+- Cost of maintenance and operation = approx. *£40,000* per year 
   - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
 
-Value for money
-> Our system will be in operation for the future *10-15 years* within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
+]
+]
 
 ---
 ## Challenges, solutions and future work
 **The government currently does not have a GIS team to maintain and operate the system.**
 
-> A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed. 
+> A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed and the reproducibility of the model will be guaranteed before handing over. 
 
-> The reproducibility of the model will be guaranteed before handing over. 
-
-> One contractor could be recruited to ensure proper deployment of the system. 
+> One contractor will be recruited to operate the system. Although one GIS specialist is prefered, the system could be used by anyone with clear SOP. 
 
 **The benefits of deploying our model is not clear in the short-term.**
 
@@ -308,7 +348,6 @@ knitr::include_graphics('images/risk.png')
 **Deficiency of current approach to forecast temperature based on meteorological agencies (which usually locate at rural areas rather than city centres where the temperature is higher).** 
 > Convey the usefulness of our model to tackle heatwaves to the government. Install sensors in the detected slum areas to check the forecasting results.
 
-
 ---
 ## Key risks and mitigation solutions (cont.)
 
@@ -320,39 +359,35 @@ knitr::include_graphics('images/risk.png')
 
 ---
 ## Summary
-SWOT of our model
 .pull-left[
 Strength: 
 
-Identify **vulnerable locations** where the government administration has low regulatory power on. Recommend **efficient solution of resource allocation** during heatwave. Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
+- Identify **vulnerable locations** where the government administration has low regulatory power on. 
+- Recommend **efficient solution of resource allocation** during heatwave.
+- Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
 ]
 
 .pull-right[
 Weakness:
 
-Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response.
+- Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response. 
+- LST from EO may not represent the ambient temperature. 
 ]
 
 .pull-left[
 Opportunity: 
 
-The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
+- The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
 ]
 
 .pull-right[
 Threat: 
 
-Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
+- Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
 ]
 
 ---
-## Limitations : need to change 
-> In some environments, the cause itself is not accurately reported if the cause of death is sensitive. 
+## Reference 
 
-> As more deaths at home or homelessness are likely to be ignored(not being collected), and the impact is likely to be underestimated during the heat wave.
-
-> The study uses mortality estimates, which makes it less accurate.
-
-> Since the temperature data is aggregated based on the temperature of the thermometer installation site, it can be measured lower than the extreme heat to which actual residents are exposed. -> Install thermometers/devices in densely populated areas
 
 

@@ -164,13 +164,13 @@ knitr::include_graphics('images/result2-slum.png')
 ## Heatwave classification
 ### Workflow
 ```{r echo=FALSE, out.width='150%', fig.align='center'}
-knitr::include_graphics('images/heatwave_workflow.png')
+knitr::include_graphics('images/heatwave_only_workflow.png')
 ```
 
 .small[Source: `r Citet(myBib, "wolf2013")`]
-.small[, [CDC Social Vulnerability Index 2018](https://www.arcgis.com/home/item.html?id=cbd68d9887574a10bc89ea4efe2b8087)]
+
 ---
-## Heatwave classification 
+## Heatwave classification
 ### Expected results
 ```{r echo=FALSE, out.width='120%', fig.align='center'}
 knitr::include_graphics('images/heatwave_result_1.png')
@@ -294,17 +294,6 @@ Value for money
 > Secondary assessment on the impacts can be conducted. 
 
 ---
-## Limitations
-**Temperature / Heatwave**
-> In some environments, the cause itself is not accurately reported if the cause of death is sensitive. 
-
-> As more deaths at home or homelessness are likely to be ignored(not being collected), and the impact is likely to be underestimated during the heat wave.
-
-> The study uses mortality estimates, which makes it less accurate.
-
-> Since the temperature data is aggregated based on the temperature of the thermometer installation site, it can be measured lower than the extreme heat to which actual residents are exposed. -> Install thermometers/devices in densely populated areas
-
----
 ## Quality / risk management
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/risk.png')
@@ -355,5 +344,15 @@ Threat:
 
 Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
 ]
+
+---
+## Limitations : need to change 
+> In some environments, the cause itself is not accurately reported if the cause of death is sensitive. 
+
+> As more deaths at home or homelessness are likely to be ignored(not being collected), and the impact is likely to be underestimated during the heat wave.
+
+> The study uses mortality estimates, which makes it less accurate.
+
+> Since the temperature data is aggregated based on the temperature of the thermometer installation site, it can be measured lower than the extreme heat to which actual residents are exposed. -> Install thermometers/devices in densely populated areas
 
 

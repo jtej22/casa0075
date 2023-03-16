@@ -30,7 +30,7 @@ myBib <- ReadBib("./Library.bib", check = FALSE)
 .pull-left[
 ### Ahmadabad 
 - Most populous city in India
-- 5.5 million in 2011 `r Citep(myBib, "chandramouli2011census")`
+- 5.5 million in 2011 (Census 2011)
 - Est. 8 million in 2023
 - City's growth from the textile industry in 1860's `r Citep(myBib, "barua2018legacies")`
 - Cotton industry migrants in slums and *Chawls*
@@ -38,7 +38,7 @@ myBib <- ReadBib("./Library.bib", check = FALSE)
 ]
 
 .pull-right[
-```{r echo=FALSE, out.width='150%', fig.align='top, right'}
+```{r echo=FALSE, out.width='90%', fig.align='top, right'}
 knitr::include_graphics('images/Layout1.png')
 ```
 ]
@@ -69,9 +69,9 @@ knitr::include_graphics('images/Layout1.png')
 > Enhansing disaster preparedness for effective response
  
 ## If no action taken, then... 
-- Increased exposure to heatwave
-- Threats to human health and wellbeing through effects on the physical, natural and social systems
-- Including threats to food and water security `r Citep(myBib, "romanello20212021")`
+- Increased exposure to heatwave 
+- *Human costs*: Increased mortality and morbidity esp the poor in LMICs `r Citep(myBib, "green2019impact")` through effects on the physical, natural and social systems, eg. food and water insecurity `r Citep(myBib, "romanello20212021")`
+- *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world `r Citep(myBib, "callahan2022globally")`
 
 ---
 ## Current Workflow: 2019 Heat Action Plan `r Citep(myBib, "amcAhmedabadHeatAction2019")`

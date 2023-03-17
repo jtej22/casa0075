@@ -12,6 +12,11 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+class: inverse, center, middle
+
+# Problem Definition
+
+--
 
 ```{r echo=FALSE}
 library(RefManageR)
@@ -72,6 +77,10 @@ knitr::include_graphics('images/Layout1.png')
 - Increased exposure to heatwave 
 - *Human costs*: Increased mortality and morbidity esp the poor in LMICs `r Citep(myBib, "green2019impact")` through effects on the physical, natural and social systems, eg. food and water insecurity `r Citep(myBib, "romanello20212021")`
 - *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world `r Citep(myBib, "callahan2022globally")`
+---
+class: inverse, center, middle
+
+# Project Approach
 
 ---
 ## Current Workflow: 2019 Heat Action Plan `r Citep(myBib, "amcAhmedabadHeatAction2019")`
@@ -170,8 +179,20 @@ knitr::include_graphics('images/heatwave_only_workflow.png')
 <small>Source: `r Citet(myBib, "wolf2013")`</small>
 
 ---
-## Heatwave classification
-### Expected results
+## Integrating both workflows
+**Slum detection** process can be conducted every 5 years, before the heat season. 
+- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
+- This can be in the action plan for the **Pre-Heat Season (January- March)** where they prepare for the heat season.
+- Cloud cover is lowest in January, which is when the data collection process should start. 
+- There should be sufficient time for the slum detection process to finish by March.
+
+**Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
+- First output of a **Historic Temperature Vulnerability Map** can be updated yearly (pre-HS) with previous year's data and the slum boundary map when updated
+- Second output of a **real-time prediction model** that can be updated daily (during HS) based on Meteorological Department's forecasts and additional sensors
+
+---
+## Integrating both workflows
+### Expected output
 ```{r echo=FALSE, out.width='120%', fig.align='center'}
 knitr::include_graphics('images/heatwave_result_1.png')
 ```
@@ -179,24 +200,13 @@ knitr::include_graphics('images/heatwave_result_1.png')
 <small>Source: [Future Heat Events and Social Vulnerability 2018](https://geoxc-apps2.bd.esri.com/Climate/HeatVulnerability/index.html)</small>
 
 ---
-## Integrating both workflows
-**Slum detection** process can be conducted every 5 years, before the hot season. 
-- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
-- This can be in the action plan for the **Pre-Heat Season (January- March)** where they prepare for the heat season.
-- Cloud cover is lowest in January, which is when the data collection process should start. 
-- There should be sufficient time for the slum detection process to finish by March.
-
-**Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
-- First output of a **vulnerability map** can be updated yearly (pre-HS) with previous year's data
-- Second output of a **real-time prediction model** can be updated daily (during HS) based on Meteorological Department's forecasts
-
----
 ## Using the outputs
 Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
-- Pre-HS resources: Medical infrastructure, educate residents on heat events
+- Pre-HS resources: Building medical infrastructure and capacity, educate residents on heat events
 - Immediate resources: Water supply, public cooling centres and night shelters, medical services
 - Long-term resources: Provide shaded public spaces and Ahmedabad Cool Roofs Program
 
+Residents can also check the map for additional alerts if they are concerned
 ---
 class: inverse, center, middle
 

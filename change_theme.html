@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The heatwave and slums in Ahmedabad, India</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Astumi, Eunyoung, Josiah, Yi-Chien, Yifei" />
+    <script src="change_theme_files/header-attrs/header-attrs.js"></script>
+    <link href="change_theme_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="change_theme_files/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# The heatwave and slums in Ahmedabad, India
+]
+.subtitle[
+## Group 75
+]
+.author[
+### Astumi, Eunyoung, Josiah, Yi-Chien, Yifei
+]
+.institute[
+### CASA
+]
+.date[
+### (updated: 2023-03-17)
+]
+
+---
+
+
+
+
+
+
+
+
+class: inverse center middle
+
+# Problem definition
+
+---
+
+## Background 
+.pull-left[
+### Ahmadabad 
+- Most populous city in India
+- 5.5 million in 2011 (Census 2011)
+- Est. 8 million in 2023
+- City's growth from the textile industry in 1860's &lt;a name=cite-barua2018legacies&gt;&lt;/a&gt;([Barua, 2018](#bib-barua2018legacies))
+- Cotton industry migrants in slums and *Chawls*
+- Estimated 34% live in slums or *chawls* (low-quality housing) &lt;a name=cite-killemsetty2013understanding&gt;&lt;/a&gt;([Killemsetty, 2013](#bib-killemsetty2013understanding))
+]
+
+.pull-right[
+&lt;img src="images/Layout1.png" width="70%" /&gt;
+]
+
+### The 2010 heatwave
+- Temperature soared to 46.8 degree celcius 
+- Heat-related excess mortality of 1344 people  &lt;a name=cite-azhar2014heat&gt;&lt;/a&gt;([Azhar, Mavalankar, Nori-Sarma, Rajiva, Dutta, Jaiswal, Sheffield, Knowlton, and Hess, 2014](#bib-azhar2014heat))
+- first Heat Action plan published in 2013
+---
+
+## Problem statement
+- Slums likely to have increased due to urban population growth (2.76% per annum), despite efforts to upgrade existing slums (Census 2011)
+
+- Furthermore, census data is already outdated 
+
+- The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
+
+- The locations of slums are unclear and need updated. 
+
+- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi &lt;a name=cite-yadav2018spatial&gt;&lt;/a&gt;([Yadav and Sharma, 2018](#bib-yadav2018spatial))
+
+
+## Objective of the proposal
+**Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow, so as to **direct heat mitigation resources to the most vulnerable areas**. 
+---
+
+## Benefits to the city
+1. **Compliance with Sustainable Development Goals 11**
+&gt; Make cities and human settlements inclusive, safe, resilient and sustainable
+2. **Compliance with the Sendai Framework**
+&gt; Enhansing disaster preparedness for effective response
+ 
+## If no action taken, then... 
+- Increased exposure to heatwave 
+- *Human costs*: Increased mortality and morbidity esp the poor in LMICs &lt;a name=cite-green2019impact&gt;&lt;/a&gt;([Green, Bailey, Schwarz, Vanos, Ebi, and Benmarhnia, 2019](#bib-green2019impact)) through effects on the physical, natural and social systems, eg. food and water insecurity &lt;a name=cite-romanello20212021&gt;&lt;/a&gt;([Romanello, McGushin, Di Napoli, Drummond, Hughes, Jamart, Kennard, Lampard, Rodriguez, Arnell, and others, 2021](#bib-romanello20212021))
+- *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world &lt;a name=cite-callahan2022globally&gt;&lt;/a&gt;([Callahan and Mankin, 2022](#bib-callahan2022globally))
+
+---
+class: inverse center middle
+
+# Approach
+
+---
+
+## Current Workflow: 2019 Heat Action Plan
+
+### Four-pronged Strategy
+- to increase public awareness and to communicate the risk of heat waves 
+- to initiate an early warning system 
+- to increase the capacity among health care professionals and 
+- to reduce health exposure and promote adaptive measures 
+- Source: &lt;a name=cite-amcAhmedabadHeatAction2019&gt;&lt;/a&gt;([AMC, 2019](#bib-amcAhmedabadHeatAction2019))
+
+### Ethos of the HAP = Protection of the vulnerable population
+- Thus, **identification of high risk neighbourhoods** before the arrival of the summer is a key priority
+- The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
+
+---
+## Timeline of Current Workflow ([AMC, 2019](#bib-amcAhmedabadHeatAction2019))
+### Pre-Heat Season (Jan-Mar)
+- AMC Nodal Officer coordinates inter-agency communications
+- Health Department and Medical Professionals educate and prepare heat-related procedures
+- 108 Emergency Service builds public awareness and **identifies vulnerable areas**
+
+### Heat Season (March-July)
+- **AMC Nodal Officer activates heat alerts when extreme heat events are forecast** + activates cooling centres and night shelters
+- Community groups check on each other
+
+### Post-Heat Season (July-Sept)
+- AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
+
+---
+## Overview of our proposed workflow
+&lt;img src="images/workflow.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+---
+## Slums Detection
+
+### Data
+
+* EO data
+  * High resolution imagery: from the [QuickBird satellite](https://earth.esa.int/eogateway/missions/quickbird-2)
+&gt; The QuickBird sensor provides a geometric resolution of 0.60 m in panchromatic mode and therefore basically allows for a delineation of the objects in slums &lt;a name=cite-taubenbock2014&gt;&lt;/a&gt;([Taubenböck and Kraff, 2014](#bib-taubenbock2014)).
+  * Landsat MSS, TM, ETM+, available [here](https://developers.google.com/earth-engine/datasets/catalog/landsat)
+  *	TerraSAR-X data, available [here](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x#data-section)
+
+* Spatial data
+  *	Street network: from the [OpenStreetMap](https://www.openstreetmap.org/#map=5/54.910/-3.432)
+
+---
+## Slums Detection
+.pull-left[
+### Workflow
+&lt;img src="images/workflow_slum.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+--
+.pull-right[
+### Expected results
+&lt;img src="images/result1-slum.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;General slums boundary for giving heatwave warning, Source: &lt;a name=cite-leonita2018&gt;&lt;/a&gt;[Leonita, Kuffer, Sliuzas, and Persello (2018)](#bib-leonita2018)&lt;/small&gt;
+&lt;img src="images/result2-slum.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;Accurate slums boundary for upgrading, Source: &lt;a name=cite-wurm2018a&gt;&lt;/a&gt;[Wurm and Taubenböck (2018)](#bib-wurm2018a)&lt;/small&gt;
+]
+
+---
+## Heatwave classification
+### Data
+* EO data from GEE
+  * [Landsat 8 OLI/TIRS Collection 2](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_TOA)
+  * MODIS
+
+* [Meteorological data](https://mausam.imd.gov.in/ahmedabad/)
+  * The average daily temperature by region
+  * The average daily temperature by month (especially Summer)
+  * Precipitation, Wind etc.
+  
+* Mortality data
+  * Daily death toll (excluding accidental deaths)
+  * The death toll by region (within a city only)
+  * Source: &lt;a name=cite-azhar2014&gt;&lt;/a&gt;[Azhar, Mavalankar, Nori-Sarma, Rajiva, Dutta, Jaiswal, Sheffield, Knowlton, and Hess (2023)](#bib-azhar2014)
+
+* Spatial data
+  * Administrative boundary data:from the [OpenStreetMap](https://www.openstreetmap.org/relation/1953566#map=9/22.7298/72.3388)
+
+---
+## Heatwave classification
+### Workflow
+&lt;img src="images/heatwave_only_workflow.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;Source: &lt;a name=cite-wolf2013&gt;&lt;/a&gt;[Wolf and McGregor (2013)](#bib-wolf2013)&lt;/small&gt;
+---
+## Heatwave classification
+### Expected results
+&lt;img src="images/heatwave_result_1.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;Source: [Future Heat Events and Social Vulnerability 2018](https://geoxc-apps2.bd.esri.com/Climate/HeatVulnerability/index.html)&lt;/small&gt;
+
+---
+## Integrating both workflows
+
+.pull-left[
+### Slum detection 
+- It can be conducted every 5 years, before the hot season. 
+- 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
+- This can be in the action plan for the **Pre-Heat Season (January- March)** where they prepare for the heat season.
+- Cloud cover is lowest in January, which is when the data collection process should start. 
+- There should be sufficient time for the slum detection process to finish by March.
+]
+
+.pull-right[
+### Temperature Monitoring
+- It can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
+- First output of a **vulnerability map** can be updated yearly (pre-HS) with previous year's data
+- Second output of a **real-time prediction model** can be updated daily (during HS) based on Meteorological Department's forecasts
+]
+
+---
+## Using the outputs
+Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
+- Pre-HS resources: Medical infrastructure, educate residents on heat events
+- Immediate resources: Water supply, public cooling centres and night shelters, medical services
+- Long-term resources: Provide shaded public spaces and Ahmedabad Cool Roofs Program
+
+---
+class: inverse, center, middle
+# Project plan, risks and value for money
+
+--
+.pull-left[
+- Reliable
+
+- Cost-effective
+
+- Sustainable
+]
+--
+.pull-right[
+- Timeline &amp; Stakeholder
+
+- Budgeting
+
+- Quality control 
+]
+---
+## Stakeholders engagement
+&lt;img src="images/stakeholder.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+## Project timeline
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/GANT1.gif" alt="Work Package 1&amp;amp;2" width="80%" /&gt;
+&lt;p class="caption"&gt;Work Package 1&amp;2&lt;/p&gt;
+&lt;/div&gt;
+
+WP1 and WP2 will be delivered in the first 4 months. 
+
+---
+## Project timeline (cont.)
+Deliverable = **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/GANT2.gif" alt="Work Package 3" width="110%" /&gt;
+&lt;p class="caption"&gt;Work Package 3&lt;/p&gt;
+&lt;/div&gt;
+
+WP3 is the actual operation of the model after handing over. 
+
+---
+## Budget plan
+**Costs**
+
+
+.panelset[
+
+.panel[.panel-name[Human capital]
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; X &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; hc.unit &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Day.rate..GBP. &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Total.cost..GBP. &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Project manager (ad-hoc team) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 370 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 22,570 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Model developer (ad-hoc team) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 525 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 57,750 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; GIS specialist (government contractor) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 400 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 8,000 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.panel[.panel-name[Data &amp; Equipment]
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; X &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; hc.unit &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Day.rate..GBP. &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Total.cost..GBP. &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; QuickBird-2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 505 sq km &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 14.5 per sq km &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 12,625 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Sensors &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 800 per item &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4,200 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Computers and IT &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 12,000 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+]
+.panel[.panel-name[Other]
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; X &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Total.cost..GBP. &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rent (in government office / remote) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rate and cost overrun (10%) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 11,715 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.panel[.panel-name[Total]
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; X &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Total.cost..GBP. &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 12 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Cost of building and testing the model (first year) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 128,861 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.panel[.panel-name[peryear]
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; X &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; hc.unit &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Day.rate..GBP. &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Total.cost..GBP. &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 13 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; GIS specialist (government contractor) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 400 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 32,800 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 14 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; QuickBird-2 (acquired every 5 years) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 505 sq km &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 14.5 per sq km &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2,525 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Sensors and IT maintainence &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1,000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rent (in government office / remote) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 17 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rate and cost overrun (10%) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3,633 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Cost of maintenance and operation (per year) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 39,959 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+]
+]
+
+
+---
+## Budget plan
+**Benefits**
+
+.panelset[
+
+.panel[.panel-name[Short-term]
+- Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
+]
+.panel[.panel-name[Long-term]
+- Prevent economic loss through efficient resource allocation and savings in urgent heat response costs
+- Provide equitable support to vulnerable groups
+]
+.panel[.panel-name[Value for money]
+- Our system will be in operation for the future *5-10 years* within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
+- Cost of building and testing the model (first year) = *£130,000*
+- Cost of maintenance and operation = approx. *£40,000* per year 
+  - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
+
+]
+]
+
+---
+## Challenges, solutions and future work
+### The government currently does not have a GIS team to maintain and operate the system.
+
+&gt; A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed and the reproducibility of the model will be guaranteed before handing over. 
+
+&gt; One contractor will be recruited to operate the system. Although one GIS specialist is prefered, the system could be used by anyone with clear SOP. 
+
+
+### The benefits of deploying our model is not clear in the short-term.
+
+&gt; Annual reviews at the end of heat season will be conducted by the HAP team. 
+
+&gt; Secondary assessment on the impacts can be conducted. 
+
+---
+## Quality / risk management
+&lt;img src="images/risk.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+## Key risks and mitigation solutions 
+
+### High spatial resolution imageries for slum detection are expensive to acquire and may go beyond set budget in the long run.
+&gt; Since the slum detection requires less frequent data sourcing, higher costs per imagery (QuickBird-2) would be acceptable. However, lower resolution data could be used since the boundary of slums tend to be less clear and may grow. The locations of slums are more important than the precise coverages at this stage. Otherwise, acquire more funding from the government.
+
+### Deficiency of current approach to forecast temperature based on meteorological agencies (which usually locate at rural areas rather than city centres where the temperature is higher).
+&gt; Convey the usefulness of our model to tackle heatwaves to the government. Install sensors in the detected slum areas to check the forecasting results.
+
+---
+## Key risks and mitigation solutions (cont.)
+
+### Model accuracy is influenced by trees and tall buildings in surface temperature data.
+&gt;Test the system in real-world events before putting into normal use. Conduct accurarcy assessment testing the prediction with ground truth data for previous years and the coming summer real-world cases. Present the results to the users and revise the model if needed. Not purely rely on the system and compare the result with the temperature sensors in slum areas. 
+
+### Our system does not mitigating heat-related risks for residents who are outdoor workers as their workplace is not monitored.
+&gt; Monitor the land surface temperature for slums and let residents to be at home during heatwaves. Although focusing on interventions to slums, the model can be adjusted for workplace temperature monitoring if needed.
+
+---
+## Summary
+.pull-left[
+### Strength: 
+
+- Identify **vulnerable locations** where the government administration has low regulatory power on. 
+- Recommend **efficient solution of resource allocation** during heatwave.
+- Inform the relevant departments with precise areas of focus to avoid inefficient resource allocation. 
+]
+
+.pull-right[
+### Weakness:
+
+- Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response. 
+- LST from EO may not represent the ambient temperature. 
+]
+
+.pull-left[
+### Opportunity: 
+
+- The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
+]
+
+.pull-right[
+### Threat: 
+
+- Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
+]
+---
+## Appendix
+
+* Alternative Model for slum detection
+  - It would need more fund, human capital and time.
+  
+&lt;img src="images/alternative-model.png" width="40%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;Source: &lt;a name=cite-kit2012&gt;&lt;/a&gt;[Kit, Lüdeke, and Reckien (2012)](#bib-kit2012)&lt;/small&gt;
+---
+## Reference 
+
+
+
+
+---
+class: inverse, center, middle
+
+# Thanks! 
+## It's Q&amp;A time :D
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

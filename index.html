@@ -27,11 +27,16 @@ class: center, middle, inverse, title-slide
 ### CASA
 ]
 .date[
-### 2023/03/02 (updated: 2023-03-16)
+### 2023/03/02 (updated: 2023-03-18)
 ]
 
 ---
 
+class: inverse, center, middle
+
+# Problem Definition
+
+---
 
 
 
@@ -41,9 +46,9 @@ class: center, middle, inverse, title-slide
 - Most populous city in India
 - 5.5 million in 2011 (Census 2011)
 - Est. 8 million in 2023
-- City's growth from the textile industry in 1860's ([Barua, 2018](#bib-barua2018legacies))
+- City's growth from the textile industry in 1860's &lt;a name=cite-barua2018&gt;&lt;/a&gt;([Barua, 2018](#bib-barua2018))
 - Cotton industry migrants in slums and *Chawls*
-- Estimated 34% live in slums or *chawls* (low-quality housing) ([Killemsetty, 2013](#bib-killemsetty2013understanding))
+- Estimated 34% live in slums or *chawls* (low-quality housing) &lt;a name=cite-killemsetty2013&gt;&lt;/a&gt;([Killemsetty, 2013](#bib-killemsetty2013))
 ]
 
 .pull-right[
@@ -52,7 +57,7 @@ class: center, middle, inverse, title-slide
 
 ### The 2010 heatwave
 - Temperature soared to 46.8 degree celcius 
-- Heat-related excess mortality of 1344 people  ([Azhar Mavalankar et al., 2014](#bib-azhar2014heat))
+- Heat-related excess mortality of 1344 people  &lt;a name=cite-azhar2014&gt;&lt;/a&gt;([Azhar, Mavalankar, Nori-Sarma, Rajiva, Dutta, Jaiswal, Sheffield, Knowlton, and Hess, 2014](#bib-azhar2014))
 - first Heat Action plan published in 2013
 
 ---
@@ -61,7 +66,7 @@ class: center, middle, inverse, title-slide
 - Furthermore, census data is already outdated 
 - The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
 - The locations of slums are unclear and need updated. 
-- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi ([Yadav and Sharma, 2018](#bib-yadav2018spatial))
+- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi &lt;a name=cite-yadav2018&gt;&lt;/a&gt;([Yadav and Sharma, 2018](#bib-yadav2018))
 
 
 
@@ -77,11 +82,15 @@ class: center, middle, inverse, title-slide
  
 ## If no action taken, then... 
 - Increased exposure to heatwave 
-- *Human costs*: Increased mortality and morbidity esp the poor in LMICs ([Green Bailey et al., 2019](#bib-green2019impact)) through effects on the physical, natural and social systems, eg. food and water insecurity ([Romanello McGushin et al., 2021](#bib-romanello20212021))
-- *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world ([Callahan and Mankin, 2022](#bib-callahan2022globally))
+- *Human costs*: Increased mortality and morbidity esp the poor in LMICs &lt;a name=cite-green2019&gt;&lt;/a&gt;([Green, Bailey, Schwarz, Vanos, Ebi, and Benmarhnia, 2019](#bib-green2019)) through effects on the physical, natural and social systems, eg. food and water insecurity &lt;a name=cite-romanello2021&gt;&lt;/a&gt;([Romanello, McGushin, Di Napoli, Drummond, Hughes, Jamart, Kennard, Lampard, Rodriguez, Arnell, and others, 2021](#bib-romanello2021))
+- *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world &lt;a name=cite-callahan2022&gt;&lt;/a&gt;([Callahan and Mankin, 2022](#bib-callahan2022))
+---
+class: inverse, center, middle
+
+# Project Approach
 
 ---
-## Current Workflow: 2019 Heat Action Plan ([AMC, 2019](#bib-amcAhmedabadHeatAction2019))
+## Current Workflow: 2019 Heat Action Plan &lt;a name=cite-amcAhmedabadHeatAction2019&gt;&lt;/a&gt;([Ahmedabad Municipal Corporation, 2019](#bib-amcAhmedabadHeatAction2019))
 ### Four-pronged Strategy
 - to increase public awareness and to communicate the risk of heat waves 
 - to initiate an early warning system 
@@ -93,7 +102,7 @@ class: center, middle, inverse, title-slide
 - The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
 
 ---
-## Timeline of Current Workflow ([AMC, 2019](#bib-amcAhmedabadHeatAction2019))
+## Timeline of Current Workflow ([Ahmedabad Municipal Corporation, 2019](#bib-amcAhmedabadHeatAction2019))
 ### Pre-Heat Season (Jan-Mar)
 - AMC Nodal Officer coordinates inter-agency communications
 - Health Department and Medical Professionals educate and prepare heat-related procedures
@@ -117,7 +126,7 @@ class: center, middle, inverse, title-slide
 
 * EO data
   * High resolution imagery: from the [QuickBird satellite](https://earth.esa.int/eogateway/missions/quickbird-2)
-&gt; The QuickBird sensor provides a geometric resolution of 0.60 m in panchromatic mode and therefore basically allows for a delineation of the objects in slums ([Taubenböck and Kraff, 2014](#bib-taubenbock2014)).
+&gt; The QuickBird sensor provides a geometric resolution of 0.60 m in panchromatic mode and therefore basically allows for a delineation of the objects in slums &lt;a name=cite-taubenbock2014&gt;&lt;/a&gt;([Taubenböck and Kraff, 2014](#bib-taubenbock2014)).
   * Landsat MSS, TM, ETM+, available [here](https://developers.google.com/earth-engine/datasets/catalog/landsat)
   *	TerraSAR-X data, available [here](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x#data-section)
 
@@ -134,9 +143,9 @@ class: center, middle, inverse, title-slide
 .pull-right[
 ### Expected results
 &lt;img src="images/result1-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
-&lt;small&gt;General slums boundary for giving heatwave warning, Source: [Leonita Kuffer et al. (2018)](#bib-leonita2018)&lt;/small&gt;
+&lt;small&gt;General slums boundary for giving heatwave warning, Source: &lt;a name=cite-leonita2018&gt;&lt;/a&gt;[Leonita, Kuffer, Sliuzas, and Persello (2018)](#bib-leonita2018)&lt;/small&gt;
 &lt;img src="images/result2-slum.png" width="100%" style="display: block; margin: auto;" /&gt;
-&lt;small&gt;Accurate slums boundary for upgrading, Source: [Wurm and Taubenböck (2018)](#bib-wurm2018a)&lt;/small&gt;
+&lt;small&gt;Accurate slums boundary for upgrading, Source: &lt;a name=cite-wurm2018a&gt;&lt;/a&gt;[Wurm and Taubenböck (2018)](#bib-wurm2018a)&lt;/small&gt;
 ]
 
 ---
@@ -154,7 +163,7 @@ class: center, middle, inverse, title-slide
 * Mortality data
   * Daily death toll (excluding accidental deaths)
   * The death toll by region (within a city only)
-  * Source: [Azhar Mavalankar et al. (2023)](#bib-azhar2014)
+  * Source: [Azhar Mavalankar et al. (2014)](#bib-azhar2014)
 
 * Spatial data
   * Administrative boundary data:from the [OpenStreetMap](https://www.openstreetmap.org/relation/1953566#map=9/22.7298/72.3388)
@@ -164,34 +173,35 @@ class: center, middle, inverse, title-slide
 ### Workflow
 &lt;img src="images/heatwave_only_workflow.png" width="150%" style="display: block; margin: auto;" /&gt;
 
-&lt;small&gt;Source: [Wolf and McGregor (2013)](#bib-wolf2013)&lt;/small&gt;
-
----
-## Heatwave classification
-### Expected results
-&lt;img src="images/heatwave_result_1.png" width="120%" style="display: block; margin: auto;" /&gt;
-
-&lt;small&gt;Source: [Future Heat Events and Social Vulnerability 2018](https://geoxc-apps2.bd.esri.com/Climate/HeatVulnerability/index.html)&lt;/small&gt;
+&lt;small&gt;Source: &lt;a name=cite-wolf2013&gt;&lt;/a&gt;[Wolf and McGregor (2013)](#bib-wolf2013)&lt;/small&gt;
 
 ---
 ## Integrating both workflows
-**Slum detection** process can be conducted every 5 years, before the hot season. 
+**Slum detection** process can be conducted every 5 years, before the heat season. 
 - 5 years is a good period of updating the data as slums do not grow that quickly and is adequate. 
 - This can be in the action plan for the **Pre-Heat Season (January- March)** where they prepare for the heat season.
 - Cloud cover is lowest in January, which is when the data collection process should start. 
 - There should be sufficient time for the slum detection process to finish by March.
 
 **Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
-- First output of a **vulnerability map** can be updated yearly (pre-HS) with previous year's data
-- Second output of a **real-time prediction model** can be updated daily (during HS) based on Meteorological Department's forecasts
+- First output of a **Historic Temperature Vulnerability Map** can be updated yearly (pre-HS) with previous year's data and the slum boundary map when updated
+- Second output of a **real-time prediction model** that can be updated daily (during HS) based on Meteorological Department's forecasts and additional sensors
+
+---
+## Integrating both workflows
+### Expected output
+&lt;img src="images/heatwave_result_1.png" width="120%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt;Source: [Future Heat Events and Social Vulnerability 2018](https://geoxc-apps2.bd.esri.com/Climate/HeatVulnerability/index.html)&lt;/small&gt;
 
 ---
 ## Using the outputs
 Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
-- Pre-HS resources: Medical infrastructure, educate residents on heat events
+- Pre-HS resources: Building medical infrastructure and capacity, educate residents on heat events
 - Immediate resources: Water supply, public cooling centres and night shelters, medical services
 - Long-term resources: Provide shaded public spaces and Ahmedabad Cool Roofs Program
 
+Residents can also check the map for additional alerts if they are concerned
 ---
 class: inverse, center, middle
 
@@ -512,13 +522,81 @@ Threat:
 * Alternative Model for slum detection
 
 &lt;img src="images/alternative-model.png" width="40%" style="display: block; margin: auto;" /&gt;
-&lt;small&gt;Source: [Kit Lüdeke et al. (2012)](#bib-kit2012)&lt;/small&gt;
+&lt;small&gt;Source: &lt;a name=cite-kit2012&gt;&lt;/a&gt;[Kit, Lüdeke, and Reckien (2012)](#bib-kit2012)&lt;/small&gt;
 
 It would need more fund, human capital and time.
 ---
 ## Reference 
 
 
+&lt;a name=bib-amcAhmedabadHeatAction2019&gt;&lt;/a&gt;[Ahmedabad Municipal
+Corporation](#cite-amcAhmedabadHeatAction2019) (2019). _Ahmedabad Heat
+Action Plan 2019_.
+
+&lt;a name=bib-azhar2014&gt;&lt;/a&gt;[Azhar, G. S., D. Mavalankar, et
+al.](#cite-azhar2014) (2014). "Heat-related mortality in India: excess
+all-cause mortality associated with the 2010 Ahmedabad heat wave". In:
+_PloS one_ 9.3, p. e91831.
+
+&lt;a name=bib-barua2018&gt;&lt;/a&gt;[Barua, R.](#cite-barua2018) (2018).
+"Legacies of Housing in Ahmedabad’s Industrial East: The Chawl and the
+Slum". In: _To be at Home_. De Gruyter Oldenbourg, pp. 175-180.
+
+&lt;a name=bib-callahan2022&gt;&lt;/a&gt;[Callahan, C. W. and J. S.
+Mankin](#cite-callahan2022) (2022). "Globally unequal effect of extreme
+heat on economic growth". In: _Science Advances_ 8.43, p. eadd3726.
+
+&lt;a name=bib-green2019&gt;&lt;/a&gt;[Green, H., J. Bailey, et
+al.](#cite-green2019) (2019). "Impact of heat on mortality and
+morbidity in low and middle income countries: a review of the
+epidemiological evidence and considerations for future research". In:
+_Environmental research_ 171, pp. 80-91.
+
+&lt;a name=bib-killemsetty2013&gt;&lt;/a&gt;[Killemsetty,
+N.](#cite-killemsetty2013) (2013). "Understanding the evolution of
+slums in Ahmedabad, through the integration of survey data sets". In:
+_Innovation in urban development: Incremental housing, big data, and
+gender_, pp. 127-145.
+
+---
+## Reference
+
+&lt;a name=bib-kit2012&gt;&lt;/a&gt;[Kit, O., M. Lüdeke, et al.](#cite-kit2012)
+(2012). "Texture-Based Identification of Urban Slums in Hyderabad,
+India Using Remote Sensing Data". In: _Applied Geography_ 32.2, pp.
+660-667.
+
+&lt;a name=bib-leonita2018&gt;&lt;/a&gt;[Leonita, G., M. Kuffer, et
+al.](#cite-leonita2018) (2018). "Machine Learning-Based Slum Mapping in
+Support of Slum Upgrading Programs: The Case of Bandung City,
+Indonesia". In: _Remote Sensing_ 10.10, p. 1522.
+
+&lt;a name=bib-romanello2021&gt;&lt;/a&gt;[Romanello, M., A. McGushin, et
+al.](#cite-romanello2021) (2021). "The 2021 report of the Lancet
+Countdown on health and climate change: code red for a healthy future".
+In: _The Lancet_ 398.10311, pp. 1619-1662.
+
+&lt;a name=bib-taubenbock2014&gt;&lt;/a&gt;[Taubenböck, H. and N. J.
+Kraff](#cite-taubenbock2014) (2014). "The Physical Face of Slums: A
+Structural Comparison of Slums in Mumbai, India, Based on Remotely
+Sensed Data". In: _Journal of Housing and the Built Environment_ 29.1,
+pp. 15-38.
+
+&lt;a name=bib-wolf2013&gt;&lt;/a&gt;[Wolf, T. and G. McGregor](#cite-wolf2013)
+(2013). "The Development of a Heat Wave Vulnerability Index for London,
+United Kingdom". In: _Weather and Climate Extremes_ 1, pp. 59-68.
+
+---
+## Reference
+
+&lt;a name=bib-wurm2018a&gt;&lt;/a&gt;[Wurm, M. and H. Taubenböck](#cite-wurm2018a)
+(2018). "Detecting Social Groups from Space \textendash Assessment of
+Remote Sensing-Based Mapped Morphological Slums Using Income Data". In:
+_Remote Sensing Letters_ 9.1, pp. 41-50.
+
+&lt;a name=bib-yadav2018&gt;&lt;/a&gt;[Yadav, N. and C. Sharma](#cite-yadav2018)
+(2018). "Spatial variations of intra-city urban heat island in megacity
+Delhi". In: _Sustainable cities and society_ 37, pp. 298-306.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -16,9 +16,9 @@ class: inverse, center, middle
 
 # Problem Definition
 
---
+---
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 library(RefManageR)
 BibOptions(check.entries = FALSE,
            bib.style = "authoryear",
@@ -37,9 +37,9 @@ myBib <- ReadBib("./Library.bib", check = FALSE)
 - Most populous city in India
 - 5.5 million in 2011 (Census 2011)
 - Est. 8 million in 2023
-- City's growth from the textile industry in 1860's `r Citep(myBib, "barua2018legacies")`
+- City's growth from the textile industry in 1860's `r Citep(myBib, "barua2018")`
 - Cotton industry migrants in slums and *Chawls*
-- Estimated 34% live in slums or *chawls* (low-quality housing) `r Citep(myBib, "killemsetty2013understanding")`
+- Estimated 34% live in slums or *chawls* (low-quality housing) `r Citep(myBib, "killemsetty2013")`
 ]
 
 .pull-right[
@@ -50,7 +50,7 @@ knitr::include_graphics('images/Layout1.png')
 
 ### The 2010 heatwave
 - Temperature soared to 46.8 degree celcius 
-- Heat-related excess mortality of 1344 people  `r Citep(myBib, "azhar2014heat")`
+- Heat-related excess mortality of 1344 people  `r Citep(myBib, "azhar2014")`
 - first Heat Action plan published in 2013
 
 ---
@@ -59,7 +59,7 @@ knitr::include_graphics('images/Layout1.png')
 - Furthermore, census data is already outdated 
 - The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
 - The locations of slums are unclear and need updated. 
-- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi `r Citep(myBib, "yadav2018spatial")`
+- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi `r Citep(myBib, "yadav2018")`
 
 
 
@@ -75,8 +75,8 @@ knitr::include_graphics('images/Layout1.png')
  
 ## If no action taken, then... 
 - Increased exposure to heatwave 
-- *Human costs*: Increased mortality and morbidity esp the poor in LMICs `r Citep(myBib, "green2019impact")` through effects on the physical, natural and social systems, eg. food and water insecurity `r Citep(myBib, "romanello20212021")`
-- *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world `r Citep(myBib, "callahan2022globally")`
+- *Human costs*: Increased mortality and morbidity esp the poor in LMICs `r Citep(myBib, "green2019")` through effects on the physical, natural and social systems, eg. food and water insecurity `r Citep(myBib, "romanello2021")`
+- *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world `r Citep(myBib, "callahan2022")`
 ---
 class: inverse, center, middle
 
@@ -411,6 +411,19 @@ It would need more fund, human capital and time.
 
 
 ```{r results='asis', echo=FALSE, warning=FALSE}
-PrintBibliography(myBib, start = 1, end = 7)
+PrintBibliography(myBib, start = 1, end = 6)
 ```
 
+---
+## Reference
+
+```{r results='asis', echo=FALSE, warning=FALSE}
+PrintBibliography(myBib, start = 7, end = 11)
+```
+
+---
+## Reference
+
+```{r results='asis', echo=FALSE, warning=FALSE}
+PrintBibliography(myBib, start = 12, end = 18)
+```

@@ -95,7 +95,7 @@ class: inverse, center, middle
 - The HAP identifies outdoor workers, low-income communities or slum communities amongst the most vulnerable
 
 ---
-## Timeline of Current Workflow `r Citep(myBib, "amcAhmedabadHeatAction2019")`
+## Timeline of Current Workflow
 ### Pre-Heat Season (Jan-Mar)
 - AMC Nodal Officer coordinates inter-agency communications
 - Health Department and Medical Professionals educate and prepare heat-related procedures
@@ -107,7 +107,7 @@ class: inverse, center, middle
 
 ### Post-Heat Season (July-Sept)
 - AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
-
+`r Citep(myBib, "amcAhmedabadHeatAction2019")`
 ---
 ## Overview of our proposed workflow
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
@@ -220,7 +220,7 @@ class: inverse, center, middle
 
 **Sustainable** 
 ]
---
+
 .pull-right[
 - Timeline & Stakeholder
 
@@ -240,17 +240,18 @@ knitr::include_graphics('images/stakeholder.png')
 knitr::include_graphics('images/GANT1.gif')
 ```
 
-WP1 and WP2 will be delivered in the first 4 months. 
+- WP1 and WP2: project initiation and model development in the first 4 months. 
 
 ---
 ## Project timeline (cont.)
-Deliverable = **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
+
+- End of WP2 Deliverable: **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
 
 ```{r echo=FALSE, out.width='110%', fig.align='center', fig.cap='Work Package 3'}
 knitr::include_graphics('images/GANT2.gif')
 ```
 
-WP3 is the actual operation of the model after handing over. 
+- WP3: the actual operation of the model after handing over. 
 
 ---
 ## Budget plan
@@ -296,13 +297,13 @@ total<-cost[12,c(1,4)]
 knitr::kable(head(total), format = 'html')
 ```
 ]
-.panel[.panel-name[peryear]
+.panel[.panel-name[Operation]
 ```{r echo=FALSE, out.width='100%'}
 peryear<-cost[13:19,]
 
 knitr::kable(head(peryear), format = 'html')
 ```
-
+  - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
 ]
 ]
 
@@ -311,23 +312,15 @@ knitr::kable(head(peryear), format = 'html')
 ## Budget plan
 **Benefits**
 
-.panelset[
-
-.panel[.panel-name[Short-term]
+Short-term:
 - Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
-]
-.panel[.panel-name[Long-term]
-- Prevent economic loss through efficient resource allocation and savings in urgent heat response costs
-- Provide equitable support to vulnerable groups
-]
-.panel[.panel-name[Value for money]
-- Our system will be in operation for the future *5-10 years* within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
-- Cost of building and testing the model (first year) = *£130,000*
-- Cost of maintenance and operation = approx. *£40,000* per year 
-  - Future maintenance will not cost as much as the first year since the model is developed and the plan is constructed.
 
-]
-]
+Long-term:
+- Reduce economic costs through efficient resource allocation and prepared heat response 
+- Provide equitable support to vulnerable groups
+
+**Value for money**
+- Our system will be in operation for the future **5-10 years** within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
 
 ---
 ## Challenges, solutions and future work
@@ -344,13 +337,13 @@ knitr::kable(head(peryear), format = 'html')
 > Secondary assessment on the impacts can be conducted. 
 
 ---
-## Quality / risk management
+## Quality control and risk management
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('images/risk.png')
 ```
 
 ---
-## Key risks and mitigation solutions 
+## Key risks and mitigations 
 
 **High spatial resolution imageries for slum detection are expensive to acquire and may go beyond set budget in the long run.**
 > Since the slum detection requires less frequent data sourcing, higher costs per imagery (QuickBird-2) would be acceptable. However, lower resolution data could be used since the boundary of slums tend to be less clear and may grow. The locations of slums are more important than the precise coverages at this stage. Otherwise, acquire more funding from the government.
@@ -359,7 +352,7 @@ knitr::include_graphics('images/risk.png')
 > Convey the usefulness of our model to tackle heatwaves to the government. Install sensors in the detected slum areas to check the forecasting results.
 
 ---
-## Key risks and mitigation solutions (cont.)
+## Key risks and mitigations (cont.)
 
 **Model accuracy is influenced by trees and tall buildings in surface temperature data.**
 >Test the system in real-world events before putting into normal use. Conduct accurarcy assessment testing the prediction with ground truth data for previous years and the coming summer real-world cases. Present the results to the users and revise the model if needed. Not purely rely on the system and compare the result with the temperature sensors in slum areas. 

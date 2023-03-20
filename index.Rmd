@@ -3,15 +3,57 @@ title: "The heatwave and slums in Ahmedabad, India"
 subtitle: "Group 75"
 author: "Astumi, Eunyoung, Josiah, Yi-Chien, Yifei"
 institute: "CASA"
-date: "2023/03/02 (updated: `r Sys.Date()`)"
+date: "2023-03-21 (updated: `r Sys.Date()`)"
+
 output:
   xaringan::moon_reader:
+    css: custom.css
     lib_dir: libs
     nature:
+      slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
+      ratio: 16:9
       countIncrementalSlides: false
+  
 ---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+```{r echo=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           max.names = 2,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("./Library.bib", check = FALSE)
+```
+
 class: inverse, center, middle
 
 # Problem Definition
@@ -43,7 +85,7 @@ myBib <- ReadBib("./Library.bib", check = FALSE)
 ]
 
 .pull-right[
-```{r echo=FALSE, out.width='90%', fig.align='top, right'}
+```{r echo=FALSE, out.width='70%', fig.align='top, right'}
 knitr::include_graphics('images/Layout1.png')
 ```
 ]
@@ -110,7 +152,7 @@ class: inverse, center, middle
 `r Citep(myBib, "amcAhmedabadHeatAction2019")`
 ---
 ## Overview of our proposed workflow
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+```{r echo=FALSE, out.width='65%', fig.align='center'}
 knitr::include_graphics('images/workflow.png')
 ```
 
@@ -132,18 +174,18 @@ knitr::include_graphics('images/workflow.png')
 ## Slums Detection
 .pull-left[
 ### Workflow
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='60%', fig.align='center'}
 knitr::include_graphics('images/workflow_slum.png')
 ```
 ]
 --
 .pull-right[
 ### Expected results
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics('images/result1-slum.png')
 ```
 <small>General slums boundary for giving heatwave warning, Source: `r Citet(myBib, "leonita2018")`</small>
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics('images/result2-slum.png')
 ```
 <small>Accurate slums boundary for upgrading, Source: `r Citet(myBib, "wurm2018a")`</small>
@@ -172,7 +214,7 @@ knitr::include_graphics('images/result2-slum.png')
 ---
 ## Heatwave classification
 ### Workflow
-```{r echo=FALSE, out.width='150%', fig.align='center'}
+```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('images/heatwave_only_workflow.png')
 ```
 
@@ -193,7 +235,7 @@ knitr::include_graphics('images/heatwave_only_workflow.png')
 ---
 ## Integrating both workflows
 ### Expected output
-```{r echo=FALSE, out.width='120%', fig.align='center'}
+```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('images/heatwave_result_1.png')
 ```
 
@@ -214,12 +256,14 @@ class: inverse, center, middle
 
 --
 .pull-left[
-**Reliable** 
+- Reliable
 
-**Cost-effective**
+- Cost-effective
 
-**Sustainable** 
+- Sustainable
 ]
+
+--
 
 .pull-right[
 - Timeline & Stakeholder
@@ -230,13 +274,13 @@ class: inverse, center, middle
 ]
 ---
 ## Stakeholders engagement
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics('images/stakeholder.png')
 ```
 
 ---
 ## Project timeline
-```{r echo=FALSE, out.width='110%', fig.align='center', fig.cap='Work Package 1&2'}
+```{r echo=FALSE, out.width='80%', fig.align='center', fig.cap='Work Package 1&2'}
 knitr::include_graphics('images/GANT1.gif')
 ```
 
@@ -255,7 +299,7 @@ knitr::include_graphics('images/GANT2.gif')
 
 ---
 ## Budget plan
-**Costs**
+###Costs
 ```{r echo=FALSE, out.width='100%'}
 xaringanExtra::use_panelset()
 
@@ -310,27 +354,27 @@ knitr::kable(head(peryear), format = 'html')
 
 ---
 ## Budget plan
-**Benefits**
+###Benefits
 
-Short-term:
+####Short-term:
 - Reduce heat-related illness and mortality rate with rapid response to the heatwaves 
 
-Long-term:
+####Long-term:
 - Reduce economic costs through efficient resource allocation and prepared heat response 
 - Provide equitable support to vulnerable groups
 
-**Value for money**
+####Value for money
 - Our system will be in operation for the future **5-10 years** within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
 
 ---
 ## Challenges, solutions and future work
-**The government currently does not have a GIS team to maintain and operate the system.**
+###The government currently does not have a GIS team to maintain and operate the system.
 
 > A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed and the reproducibility of the model will be guaranteed before handing over. 
 
 > One contractor will be recruited to operate the system. Although one GIS specialist is prefered, the system could be used by anyone with clear SOP. 
 
-**The benefits of deploying our model is not clear in the short-term.**
+###The benefits of deploying our model is not clear in the short-term.
 
 > Annual reviews at the end of heat season will be conducted by the HAP team. 
 
@@ -338,32 +382,32 @@ Long-term:
 
 ---
 ## Quality control and risk management
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('images/risk.png')
 ```
 
 ---
 ## Key risks and mitigations 
 
-**High spatial resolution imageries for slum detection are expensive to acquire and may go beyond set budget in the long run.**
+###High spatial resolution imageries for slum detection are expensive to acquire and may go beyond set budget in the long run.
 > Since the slum detection requires less frequent data sourcing, higher costs per imagery (QuickBird-2) would be acceptable. However, lower resolution data could be used since the boundary of slums tend to be less clear and may grow. The locations of slums are more important than the precise coverages at this stage. Otherwise, acquire more funding from the government.
 
-**Deficiency of current approach to forecast temperature based on meteorological agencies (which usually locate at rural areas rather than city centres where the temperature is higher).** 
+###Deficiency of current approach to forecast temperature based on meteorological agencies (which usually locate at rural areas rather than city centres where the temperature is higher).
 > Convey the usefulness of our model to tackle heatwaves to the government. Install sensors in the detected slum areas to check the forecasting results.
 
 ---
 ## Key risks and mitigations (cont.)
 
-**Model accuracy is influenced by trees and tall buildings in surface temperature data.**
+###Model accuracy is influenced by trees and tall buildings in surface temperature data.
 >Test the system in real-world events before putting into normal use. Conduct accurarcy assessment testing the prediction with ground truth data for previous years and the coming summer real-world cases. Present the results to the users and revise the model if needed. Not purely rely on the system and compare the result with the temperature sensors in slum areas. 
 
-**Our system does not mitigating heat-related risks for residents who are outdoor workers as their workplace is not monitored.**
+###Our system does not mitigating heat-related risks for residents who are outdoor workers as their workplace is not monitored.
 > Monitor the land surface temperature for slums and let residents to be at home during heatwaves. Although focusing on interventions to slums, the model can be adjusted for workplace temperature monitoring if needed.
 
 ---
 ## Summary
 .pull-left[
-Strength: 
+###Strength: 
 
 - Identify **vulnerable locations** where the government administration has low regulatory power on. 
 - Recommend **efficient solution of resource allocation** during heatwave.
@@ -371,23 +415,33 @@ Strength:
 ]
 
 .pull-right[
-Weakness:
+###Weakness:
 
 - Temperature prediction triggered by the alerts from weather stations and sensors can be slightly lagged in response. 
 - LST from EO may not represent the ambient temperature. 
 ]
 
 .pull-left[
-Opportunity: 
+###Opportunity: 
 
 - The system could be improved in the long term with increased real-time data to **predict** heatwaves through deep learning on past data and **build resilience** during disaster.
 ]
 
 .pull-right[
-Threat: 
+###Threat: 
 
 - Possibility of misclassification on areas of high risks (which can be iteratively improved with increasing amount of data).
 ]
+---
+class: inverse, center, middle
+
+# Thanks! 
+## It's Q&A time :D
+
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+knitr::include_graphics('images/Amy Sedaris Reaction GIF by truTV’s At Home with Amy Sedaris - Find & Share on GIPHY.gif')
+```
+
 ---
 ## Appendix
 

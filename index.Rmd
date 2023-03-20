@@ -77,7 +77,7 @@ myBib <- ReadBib("./Library.bib", check = FALSE)
 .pull-left[
 ### Ahmadabad 
 - Most populous city in India
-- 5.5 million in 2011 (Census 2011)
+- 5.5 million in 2011 (2011 Census)
 - Est. 8 million in 2023
 - City's growth from the textile industry in 1860's `r Citep(myBib, "barua2018")`
 - Cotton industry migrants in slums and *Chawls*
@@ -90,35 +90,35 @@ knitr::include_graphics('images/Layout1.png')
 ```
 ]
 
-### The 2010 heatwave
+### The 2010 Heatwave
 - Temperature soared to 46.8 degree celcius 
 - Heat-related excess mortality of 1344 people  `r Citep(myBib, "azhar2014")`
-- first Heat Action plan published in 2013
+- First Heat Action plan published in 2013
 
 ---
-## Problem statement
-- Slums likely to have increased due to urban population growth (2.76% per annum), despite efforts to upgrade existing slums (Census 2011)
+## Problem Statement
+- Slums likely to have increased due to urban population growth (2.76% per annum), despite efforts to upgrade existing slums (2011 Census)
 - Furthermore, census data is already outdated 
 - The city's boundary expanded twice since last census, incorporating peripheral villages and municipalities 
-- The locations of slums are unclear and need updated. 
-- Urban geometry can contribute to heat islands and intra-urban temperature differences, eg. up to 6 degree in Delhi `r Citep(myBib, "yadav2018")`
+- The locations of slums are unclear and needs updating. 
+- Urban geometry can contribute to heat islands and intra-urban temperature differences (eg. up to 6 degree in Delhi `r Citep(myBib, "yadav2018")`)
 
 
 
-## Objective of the proposal
-**Systematically identify the areas of high risk and vulnerable populations and neighbourhoods**, using EO data and incorporating into the City's workflow, so as to **direct heat mitigation resources to the most vulnerable areas**. 
+## Project Objective
+**Systematically identify areas of high risk and vulnerable populations and neighbourhoods**, while incorporating the use of EO data into the City's workflow, so as to **direct heat mitigation resources to the most vulnerable areas**. 
 ---
 
 ## Benefits to the city
 1. **Compliance with Sustainable Development Goals 11**
 > Make cities and human settlements inclusive, safe, resilient and sustainable
 2. **Compliance with the Sendai Framework**
-> Enhansing disaster preparedness for effective response
+> Enhancing disaster preparedness for effective response
  
 ## If no action taken, then... 
 - Increased exposure to heatwave 
-- *Human costs*: Increased mortality and morbidity esp the poor in LMICs `r Citep(myBib, "green2019")` through effects on the physical, natural and social systems, eg. food and water insecurity `r Citep(myBib, "romanello2021")`
-- *Economic costs*: Depress economic growth particularly in the poor tropical regions of the world `r Citep(myBib, "callahan2022")`
+- **Human costs**: Increased mortality and morbidity esp the poor in LMICs `r Citep(myBib, "green2019")` through effects on the physical, natural and social systems, eg. food and water insecurity `r Citep(myBib, "romanello2021")`
+- **Economic costs**: Depress economic growth particularly in the poor tropical regions of the world `r Citep(myBib, "callahan2022")`
 ---
 class: inverse, center, middle
 
@@ -144,14 +144,14 @@ class: inverse, center, middle
 - 108 Emergency Service builds public awareness and **identifies vulnerable areas**
 
 ### Heat Season (March-July)
-- **AMC Nodal Officer activates heat alerts when extreme heat events are forecast** + activates cooling centres and night shelters
+- **AMC Nodal Officer activates heat alerts when extreme heat events are forecast** and activates cooling centres and night shelters
 - Community groups check on each other
 
 ### Post-Heat Season (July-Sept)
 - AMC Nodal Officer conducts evaluation and identifies key areas for improvement.
 `r Citep(myBib, "amcAhmedabadHeatAction2019")`
 ---
-## Overview of our proposed workflow
+## Overview of Proposed Workflow
 ```{r echo=FALSE, out.width='65%', fig.align='center'}
 knitr::include_graphics('images/workflow.png')
 ```
@@ -192,7 +192,7 @@ knitr::include_graphics('images/result2-slum.png')
 ]
 
 ---
-## Heatwave classification
+## Heatwave Classification
 ### Data
 * EO data from GEE
   * [Landsat 8 OLI/TIRS Collection 2](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_TOA)
@@ -212,7 +212,7 @@ knitr::include_graphics('images/result2-slum.png')
   * Administrative boundary data:from the [OpenStreetMap](https://www.openstreetmap.org/relation/1953566#map=9/22.7298/72.3388)
 
 ---
-## Heatwave classification
+## Heatwave Classification
 ### Workflow
 ```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('images/heatwave_only_workflow.png')
@@ -230,7 +230,7 @@ knitr::include_graphics('images/heatwave_only_workflow.png')
 
 **Temperature Monitoring** can be incorporated into the Nodal Officer’s workflow of monitoring and predicting extreme heat events.
 - First output of a **Historic Temperature Vulnerability Map** can be updated yearly (pre-HS) with previous year's data and the slum boundary map when updated
-- Second output of a **real-time prediction model** that can be updated daily (during HS) based on Meteorological Department's forecasts and additional sensors
+- Second output of a **real-time forecast model** that can be updated daily (during HS) based on temperature data from Meteorological Department's forecasts and additional sensors
 
 ---
 ## Integrating both workflows
@@ -244,15 +244,15 @@ knitr::include_graphics('images/heatwave_result_1.png')
 ---
 ## Using the outputs
 Both outputs serve to help direct heat mitigation resources to the most vulnerable areas
-- Pre-HS resources: Building medical infrastructure and capacity, educate residents on heat events
-- Immediate resources: Water supply, public cooling centres and night shelters, medical services
-- Long-term resources: Provide shaded public spaces and Ahmedabad Cool Roofs Program
+- Pre-HS resources: Building medical infrastructure and capacity, educating residents on heat events
+- Immediate resources: Providing water supply, public cooling centres and night shelters, medical services
+- Long-term resources: Providing shaded public spaces and Ahmedabad Cool Roofs Program
 
-Residents can also check the map for additional alerts if they are concerned
+Residents can also check the forecast map for additional alerts if they are concerned
 ---
 class: inverse, center, middle
 
-# Project plan, risks and value for money
+# Project Plan, Risks and Value for Money
 
 --
 .pull-left[
@@ -266,20 +266,20 @@ class: inverse, center, middle
 --
 
 .pull-right[
-- Timeline & Stakeholder
+- Timeline & Stakeholders
 
 - Budgeting
 
 - Quality control 
 ]
 ---
-## Stakeholders engagement
+## Stakeholder Engagement
 ```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics('images/stakeholder.png')
 ```
 
 ---
-## Project timeline
+## Project Timeline
 ```{r echo=FALSE, out.width='80%', fig.align='center', fig.cap='Work Package 1&2'}
 knitr::include_graphics('images/GANT1.gif')
 ```
@@ -287,7 +287,7 @@ knitr::include_graphics('images/GANT1.gif')
 - WP1 and WP2: project initiation and model development in the first 4 months. 
 
 ---
-## Project timeline (cont.)
+## Project Timeline (cont.)
 
 - End of WP2 Deliverable: **a heat vulnerability dashboard for informal settlements** with **a clear standard operating procedure (SOP)** for consistency in future maintenance and operation.
 
@@ -298,7 +298,7 @@ knitr::include_graphics('images/GANT2.gif')
 - WP3: the actual operation of the model after handing over. 
 
 ---
-## Budget plan
+## Budget Plan
 ###Costs
 ```{r echo=FALSE, out.width='100%'}
 xaringanExtra::use_panelset()
@@ -353,7 +353,7 @@ knitr::kable(head(peryear), format = 'html')
 
 
 ---
-## Budget plan
+## Budget Plan
 ###Benefits
 
 ####Short-term:
@@ -363,11 +363,11 @@ knitr::kable(head(peryear), format = 'html')
 - Reduce economic costs through efficient resource allocation and prepared heat response 
 - Provide equitable support to vulnerable groups
 
-####Value for money
+####Value for Money
 - Our system will be in operation for the future **5-10 years** within the £500,000 budget, supporting the HAP in mitigating social, economic and environmental loss caused by heatwaves. 
 
 ---
-## Challenges, solutions and future work
+## Challenges, Solutions and Future Work
 ###The government currently does not have a GIS team to maintain and operate the system.
 
 > A user-friendly interface / SOP for the government (esp. Nodal Officers) will be developed and the reproducibility of the model will be guaranteed before handing over. 
@@ -387,7 +387,7 @@ knitr::include_graphics('images/risk.png')
 ```
 
 ---
-## Key risks and mitigations 
+## Key Risks and Mitigations 
 
 ###High spatial resolution imageries for slum detection are expensive to acquire and may go beyond set budget in the long run.
 > Since the slum detection requires less frequent data sourcing, higher costs per imagery (QuickBird-2) would be acceptable. However, lower resolution data could be used since the boundary of slums tend to be less clear and may grow. The locations of slums are more important than the precise coverages at this stage. Otherwise, acquire more funding from the government.
@@ -396,7 +396,7 @@ knitr::include_graphics('images/risk.png')
 > Convey the usefulness of our model to tackle heatwaves to the government. Install sensors in the detected slum areas to check the forecasting results.
 
 ---
-## Key risks and mitigations (cont.)
+## Key Risks and Mitigations (cont.)
 
 ###Model accuracy is influenced by trees and tall buildings in surface temperature data.
 >Test the system in real-world events before putting into normal use. Conduct accurarcy assessment testing the prediction with ground truth data for previous years and the coming summer real-world cases. Present the results to the users and revise the model if needed. Not purely rely on the system and compare the result with the temperature sensors in slum areas. 
